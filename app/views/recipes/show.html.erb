@@ -1,0 +1,33 @@
+<div class='container'>
+<%= render 'shared/header' %>
+  <div class='content'>
+    <p>
+      <strong>Title:</strong>
+      <%= @recipe.title %>
+    </p>
+
+    <p>
+      <strong>Author:</strong>
+      <%= @recipe.author %>
+    </p>
+
+    <p>
+      <strong>Ingredient:</strong>
+      <%= @recipe.ingredient %>
+    </p>
+
+    <p>
+      <strong>Method:</strong>
+      <%= @recipe.method %>
+    </p>
+
+    <h2>Comments</h2>
+    <%= render @recipe.recipe_comments %>
+
+    <h2>Add a comment:</h2>
+    <%= render 'recipe_comments/form' %>
+
+    <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+    <%= link_to 'Back', recipes_path %>
+  </div>
+</div>
