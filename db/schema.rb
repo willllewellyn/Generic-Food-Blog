@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,38 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_180_930_151_900) do
-  create_table 'articles', force: :cascade do |t|
-    t.string 'title'
-    t.text 'text'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+ActiveRecord::Schema.define(version: 2018_09_30_151900) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'comments', force: :cascade do |t|
-    t.string 'commenter'
-    t.text 'body'
-    t.integer 'article_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index ['article_id'], name: 'index_comments_on_article_id'
+  create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
+    t.integer "article_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_comments_on_article_id"
   end
 
-  create_table 'recipe_comments', force: :cascade do |t|
-    t.string 'commenter'
-    t.text 'body'
-    t.integer 'recipe_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index ['recipe_id'], name: 'index_recipe_comments_on_recipe_id'
+  create_table "recipe_comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
+    t.integer "recipe_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipe_id"], name: "index_recipe_comments_on_recipe_id"
   end
 
-  create_table 'recipes', force: :cascade do |t|
-    t.string 'title'
-    t.string 'author'
-    t.text 'ingredient'
-    t.text 'method'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "recipes", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.text "ingredient"
+    t.text "method"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
 end
