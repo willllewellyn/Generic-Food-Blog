@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'homepage/index'
 
   resources :articles do
-    resources :comments
+    resources :article_comments
   end
 
   resources :recipes do
