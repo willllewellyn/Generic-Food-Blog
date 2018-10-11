@@ -11,5 +11,9 @@ Rails.application.routes.draw do
     resources :recipe_comments
   end
 
+  resources :blog
+
+  resources :about
+
   root 'homepage#index'
 end
