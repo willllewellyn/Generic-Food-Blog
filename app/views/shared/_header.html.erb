@@ -7,16 +7,16 @@
       <li class='subtitle'>
         <%= link_to 'Articles', articles_path, :class=> 'page_words' %>
         <ul>
-          <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
-          <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'All Articles', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'New Article', new_article_path, :class=> 'page_words' %></li>
           <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
         </ul>
       </li>
       <li class='subtitle'>
         <%= link_to 'Recipes', recipes_path, :class=> 'page_words' %>
         <ul>
-          <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
-          <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'All Recipes', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'New Recipe', new_recipe_path, :class=> 'page_words' %></li>
           <li><%= link_to 'About', root_path, :class=> 'page_words' %></li>
         </ul>
       </li>
@@ -25,6 +25,11 @@
       </li>
       <li class='subtitle'>
         <%= link_to 'About', root_path, :class=> 'page_words' %>
+        <ul>
+          <li><%= link_to 'Contacts', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'Other Contacts', root_path, :class=> 'page_words' %></li>
+          <li><%= link_to 'Health and Saftey', root_path, :class=> 'page_words' %></li>
+        </ul>
       </li>
     </ul>
   </nav>
