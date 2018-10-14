@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  left: 0;
+  right: 0;
+  margin: 0px 35px 0px 35px;
+  background-color: #a2adbe;
+
+  .content {
+    font-size: 14px;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+     }
+
+    a:hover {
+    	transition-duration: 0.2s;
+    	color: #d1f2eb;
+    }
+  }
+}
