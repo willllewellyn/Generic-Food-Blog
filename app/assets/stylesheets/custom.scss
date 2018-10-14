@@ -9,14 +9,12 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  // text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  // text-align: center;
   font-weight: normal;
   color: #777;
 }
@@ -44,20 +42,13 @@ table {
   padding-top: 30px;
 }
 
-.box {
-  background-color: #ffffff;
-  min-height: 93%;
-  margin: 100px 35px 0px 35px;
-}
-
 html {
   height: 93%;
   position:relative;
 }
 
 body {
-  background-color: #D1F2EB;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #d1f2eb;
   height: 93%;
   font-size: 22px;
   line-height: 32px;
@@ -65,8 +56,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.box {
+  background-color: #ffffff;
+  min-height: 93%;
+  margin: 75px 35px 0px 35px;
+}
+
 .content {
-  padding: 30px 60px;
+  padding: 15px;
   max-height: 90%;
   font-size: 18px;
 }
