@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
 }
@@ -20,8 +20,13 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 0.8em;
   line-height: 1.7em;
+}
+
+ul li {
+  font-size: 0.8em;
+  line-height: 1.4em;
 }
 
 td {
@@ -56,14 +61,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.box {
+.container {
   background-color: #ffffff;
   min-height: 93%;
-  margin: 75px 35px 0px 35px;
+  margin: 55px 35px 0px 35px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.content {
+.body {
   padding: 15px;
-  max-height: 90%;
+  max-height: 100%;
   font-size: 18px;
+  padding-bottom: 40px;
 }

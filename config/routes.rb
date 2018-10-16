@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'legal/privacy_policy'
+  get 'legal/terms_of_use'
   get 'about/contacts'
   get 'about/other_contacts'
   get 'about/health_and_safety'

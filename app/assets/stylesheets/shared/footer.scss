@@ -1,14 +1,15 @@
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: inherit;
   left: 0;
   right: 0;
-  margin: 0px 35px 0px 35px;
   background-color: #a2adbe;
+  bottom: -0px;
+  height: 50px;
 
-  .content {
+  .footer_body {
     font-size: 14px;
+    padding: 10px 20px;
 
     a {
       color: #ffffff;
