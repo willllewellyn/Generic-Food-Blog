@@ -75,3 +75,9 @@ body {
   font-size: 18px;
   padding-bottom: 40px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
