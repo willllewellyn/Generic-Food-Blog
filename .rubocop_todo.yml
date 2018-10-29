@@ -37,12 +37,7 @@ Style/ClassAndModuleChildren:
 
 # Offense count: 33
 Style/Documentation:
-  Exclude:
-    - 'db/*'
-    - 'db/migrate/*'
-    - 'test/*'
-    - 'test/controllers/*'
-    - 'config/*'
+  Enabled: false
 
 # Offense count: 2
 Style/MixinUsage:
