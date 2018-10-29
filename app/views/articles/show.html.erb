@@ -1,6 +1,6 @@
-<div class='container'>
 <%= render 'shared/header' %>
-  <div class='body'>
+<div class='container'>
+  <div class='content'>
     <p>
       <strong>Title:</strong>
       <%= @article.title %>
@@ -20,4 +20,5 @@
     <%= link_to 'Edit', edit_article_path(@article) %> |
     <%= link_to 'Back', articles_path %>
   </div>
+  <%= render 'shared/footer' %>
 </div>
