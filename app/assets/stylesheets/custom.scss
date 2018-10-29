@@ -48,13 +48,13 @@ table {
 }
 
 html {
-  height: 93%;
+  height: 100%;
   position:relative;
 }
 
 body {
   background-color: #d1f2eb;
-  height: 93%;
+  height: 100%;
   font-size: 22px;
   line-height: 32px;
   word-wrap:break-word !important;
@@ -63,15 +63,15 @@ body {
 
 .container {
   background-color: #ffffff;
-  min-height: 93%;
+  min-height: 100%;
   margin: 55px 35px 0px 35px;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.body {
+.content {
   padding: 15px;
-  max-height: 100%;
+  min-height: 100%;
   font-size: 18px;
   padding-bottom: 40px;
 }
