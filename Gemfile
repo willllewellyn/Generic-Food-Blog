@@ -59,15 +59,16 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'rubocop'
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
+  gem 'coveralls', require: false
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'pry'
   gem 'pry-byebug'
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
-  gem 'coveralls', require: false
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-rspec', require: false
+  gem 'shoulda-matchers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

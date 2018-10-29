@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'content/chocolate_cake'
+  get 'content/baked_potatoes'
   get 'legal/privacy_policy'
   get 'legal/terms_of_use'
   get 'about/contacts'
