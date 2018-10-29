@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'their_recipes/chocolate_cake'
+  get 'their_recipes/baked_potatoes'
   get 'content/chocolate_cake'
   get 'content/baked_potatoes'
   get 'legal/privacy_policy'
