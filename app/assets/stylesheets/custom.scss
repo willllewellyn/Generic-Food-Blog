@@ -6,24 +6,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  // text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  // text-align: center;
   font-weight: normal;
   color: #777;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 0.8em;
   line-height: 1.7em;
+}
+
+ul li {
+  font-size: 0.8em;
+  line-height: 1.4em;
 }
 
 td {
@@ -44,29 +47,37 @@ table {
   padding-top: 30px;
 }
 
-.box {
-  background-color: #ffffff;
-  min-height: 93%;
-  margin: 100px 35px 0px 35px;
-}
-
 html {
-  height: 93%;
+  height: 100%;
   position:relative;
 }
 
 body {
-  background-color: #D1F2EB;
-  font-family: 'Open Sans', sans-serif;
-  height: 93%;
+  background-color: #d1f2eb;
+  height: 100%;
   font-size: 22px;
   line-height: 32px;
   word-wrap:break-word !important;
   font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  background-color: #ffffff;
+  min-height: 100%;
+  margin: 55px 35px 0px 35px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .content {
-  padding: 30px 60px;
-  max-height: 90%;
+  padding: 15px;
+  min-height: 100%;
   font-size: 18px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
 }
