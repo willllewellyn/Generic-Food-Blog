@@ -1,36 +1,48 @@
-<div class='header'>
-  <nav>
-    <ul>
-      <li class='title'>
-        <%= link_to image_tag('Generic-Food-Blog-Logo.png', :alt => 'Generic Food Blog'), root_path %>
-      </li>
-      <li class='subtitle'>
-        <%= link_to 'Articles', articles_path %>
-        <ul>
-          <li><%= link_to 'All Articles', articles_path %></li>
-          <li><%= link_to 'New Article', new_article_path %></li>
-          <li><%= link_to 'About', root_path %></li>
-        </ul>
-      </li>
-      <li class='subtitle'>
-        <%= link_to 'Recipes', recipes_path %>
-        <ul>
-          <li><%= link_to 'All Recipes', recipes_path %></li>
-          <li><%= link_to 'New Recipe', new_recipe_path %></li>
-          <li><%= link_to 'About', root_path %></li>
-        </ul>
-      </li>
-      <li class='subtitle'>
-        <%= link_to 'Blog', root_path %>
-      </li>
-      <li class='subtitle'>
-        <%= link_to 'About', about_index_url %>
-        <ul>
-          <li><%= link_to 'Contacts', about_contacts_url %></li>
-          <li><%= link_to 'Other Contacts', about_other_contacts_url %></li>
-          <li><%= link_to 'Health & Safety', about_health_and_safety_url %></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="topnav" id="myTopnav">
+  <%= link_to image_tag('Generic-Food-Blog-Logo.png', :alt => 'Generic Food Blog'), root_path %>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>Articles
+    </button>
+    <div class="dropdown-content">
+      <%= link_to 'All Articles', articles_path %>
+      <%= link_to 'New Article', new_article_path %>
+      <%= link_to 'About', root_path %>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-caret-down"></i>Recipes
+    </button>
+    <div class="dropdown-content">
+      <%= link_to 'All Recipes', recipes_path %>
+      <%= link_to 'New Recipe', new_recipe_path %>
+      <%= link_to 'About', root_path %>
+    </div>
+  </div>
+  <%= link_to 'Blog', blogs_path %>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <%= link_to 'About Me', about_index_url %>
+      <%= link_to 'Contacts', about_contacts_url %>
+      <%= link_to 'Other Contacts', about_other_contacts_url %>
+      <%= link_to 'Health & Safety', about_health_and_safety_url %>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+
+<script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+</script>
