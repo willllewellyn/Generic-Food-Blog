@@ -1,5 +1,5 @@
 div.polaroid {
-  width:  90%;
+  width: 90%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
@@ -22,9 +22,7 @@ img { width: 100% }
   float: left;
   width: 35%;
   max-width: 430px;
-}
 
-.description {
   *{
     margin:0;
     padding:0;
@@ -122,38 +120,44 @@ img { width: 100% }
   ol ol li:last-child {margin-bottom:0;}
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .picture {
-    width: 50%;
+    width: 100%;
+
+    .polaroid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .description {
-    width: 50%;
+    width: 100%;
   }
 
   .ingredient {
-    width: 50%;
+    width: 100%;
   }
 
   .method {
-    width: 50%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .picture {
-    width: 100%;
+    width: 50%;
   }
 
   .description {
-    width: 100%;
+    width: 50%;
   }
 
   .ingredient {
-    width: 100%;
+    width: 50%;
   }
 
   .method {
-    width: 100%;
+    width: 50%;
   }
 }
