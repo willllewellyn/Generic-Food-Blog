@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "loofah", ">= 2.2.3"
 
 source 'https://rubygems.org'
 gem 'nokogiri'
