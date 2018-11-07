@@ -81,6 +81,19 @@ a img {
 	color: #76d7c4;
 }
 
+.logo a {
+	font-size: 120%;
+	letter-spacing: 1.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.logo a:hover {
+	background-color: #ffffff;
+	color: #76d7c4;
+	transition-duration: 0.2s;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;

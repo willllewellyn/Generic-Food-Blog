@@ -2,14 +2,21 @@
 <div class='container'>
   <div class='content'>
     <div class='picture'>
+
       <div class="polaroid">
         <%= image_tag('chocolate cake.png', :alt => 'Chocolate Cake') %>
         <div class="polaroid_container">
           <p class='content_description'>
             Chocolate Cake
           </p>
+          <p>
+            <%= link_to "Miriam Nice - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake",
+            :target => "_blank" %>
+          </p>
         </div>
       </div>
+
       <div class='description'>
         <ul>
           <li>
@@ -28,13 +35,12 @@
           </li>
         </ul>
       </div>
+      
       <div class='ingredients'>
         <ul>
           <li>
             <a>
-              <h2>
-                Ingredients:
-              </h2>
+              <h2>Ingredients:</h2>
               <ul>
                 <li> 200g golden caster sugar </li>
                 <li> 200g unsalted butter </li>
