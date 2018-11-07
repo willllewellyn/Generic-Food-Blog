@@ -20,7 +20,16 @@
       font-family: 'Caveat Brush';
       font-size: 140%;
       font-weight: bold;
-      padding-bottom: 10px;
+      margin-bottom: 0px;
+    }
+
+    a {
+      color: #000000;
+    }
+
+    a:hover {
+      color: #a2adbe;
+      transition-duration: 0.2s;
     }
   }
 }
@@ -79,8 +88,8 @@
 
 .ingredients {
   float: left;
-  width: 60%;
-  max-width: 530px;
+  width: 100%;
+  max-width: 400px;
   margin-left: 30px;
   margin-top: -20px;
   margin-bottom: 50px;
@@ -188,7 +197,6 @@
       margin-right: -9px;
       position: absolute;
       border-radius: 50%;
-      padding-bottom: 5px;
       height: 20px;
       width: 20px;
       background-color: #a2adbe;
@@ -203,7 +211,6 @@
       margin-left: -9px;
       position: absolute;
       border-radius: 50%;
-      padding-bottom: 5px;
       height: 20px;
       width: 20px;
       background-color: #a2adbe;
@@ -241,6 +248,27 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .picture {
+    width: 40%;
+  }
+
+  .description {
+    min-width: 310px;
+  }
+
+  .ingredients {
+    width: 80%;
+    min-width: 310px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .method {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .picture {
     width: 100%;
@@ -256,29 +284,13 @@
     width: 100%;
   }
 
-  .ingredient {
+  .ingredients {
     width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .method {
     width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .picture {
-    width: 50%;
-  }
-
-  .description {
-    width: 50%;
-  }
-
-  .ingredient {
-    width: 50%;
-  }
-
-  .method {
-    width: 50%;
   }
 }
