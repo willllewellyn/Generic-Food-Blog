@@ -1,83 +1,8 @@
-// nav {
-// 	background-color: #ffffff;
-// }
-//
-// nav ul {
-// 	padding: 0;
-//   margin: 0;
-// 	list-style: none;
-// 	position: relative;
-// 	}
-//
-// nav ul li {
-// 	display: inline-block;
-// 	background-color: #ffffff;
-// }
-//
-// nav a {
-// 	display: block;
-// 	padding: 0px 10px 0px 16px;
-// 	color: #000000;
-// 	font-size: 16px;
-// 	line-height: 45px;
-// 	text-decoration: none;
-// 	border-left: 1px solid #d9d9d9;
-// }
-//
-// nav a:hover {
-// 	transition-duration: 0.2s;
-// 	color: #76d7c4;
-// 	text-decoration: none;
-// }
-//
-// nav ul ul {
-// 	display: none;
-// 	position: absolute;
-// 	top: 45px;
-// }
-//
-// nav ul li ul li {
-// 	border-style: solid;
-// 	border-width: 0px 1px 1px 1px;
-// 	border-color: #d9d9d9;
-// 	border-left: 0px solid #d9d9d9;
-//
-// 	a:hover {
-		// background-color: #A2ADBE;
-		// color: #ffffff;
-// 	}
-// }
-//
-// nav ul li:hover > ul {
-// 	display:inherit;
-// }
-//
-// nav ul ul li {
-// 	width: 170px;
-// 	float: none;
-// 	display:list-item;
-// 	position: relative;
-// }
-//
-// nav ul ul ul li {
-// 	position: relative;
-// 	top: -60px;
-// 	left: 170px;
-// }
-//
 a img {
 	height: 28px;
 	width: 60px;
 }
-//
-// .header {
-// 	position: sticky;
-// 	top: 0;
-// 	width: 100%;
-// 	border-bottom: 1px solid #d9d9d9;
-// }
 
-/* Add a black background color to the top navigation */
 .topnav {
 	background-color: #ffffff;
 }
@@ -88,7 +13,6 @@ a img {
   display:table;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -100,7 +24,6 @@ a img {
 }
 
 .active {
-	// background-color: #555555;
 	color: #76d7c4;
 }
 
@@ -117,7 +40,6 @@ a img {
   font-size: 17px;
   border: none;
   outline: none;
-  // color: #76d7c4;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
