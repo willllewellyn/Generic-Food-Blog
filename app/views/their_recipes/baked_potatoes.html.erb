@@ -1,27 +1,91 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <h1>Baked Potatoes</h1>
-    <p>
-      Description:
-    </p>
-    <p>
+    <div class='picture'>
 
-    </p>
+      <div class="polaroid">
+        <%= image_tag('baked_potatoes.png', :alt => 'Baked Potatoes') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Baked Potatoes
+          </p>
+        </div>
+      </div>
 
-    <p>
-      Ingredients:
-    </p>
-    <ul>
-      <li> Which pages are being viewed </li>
-    </ul>
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Ready for some soft and hot baked potatoes topped with layers
+                of cheese and baked beans? The ultimate baked potato.
+              </p>
+              <p>
+                Prep: 15 min
+                Cook: 1 hour 10 min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <p>
-      Method:
-    </p>
-    <ul>
-      <li> Who you are </li>
-    </ul>
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2 Large Potatoes </li>
+                <li> 200g salted butter </li>
+                <li> 200g mature cheese </li>
+                <li> 1 can of baked beans </li>
+                <li> pinch of rock salt </li>
+                <li> virgin olive oil </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Heat oven to 200C/180C fan/gas 5. Put foil down on a baking tray,
+            stab each potato several times.
+          </p>
+          <p>
+            Cover each potato in virgin olive oil and add a sprinkle of rock
+            salt to each. Put the potatoes on the baking tray and place in oven
+            for 1 hour and 10 minutes.
+          </p>
+          <p>
+            Put the baked beans on heat once the time is up, making sure to
+            stir to prevent the beans from sticking to the bottom. While the
+            beans are cooking, grate the cheese.
+          </p>
+          <p>
+            Take the potatoes out the oven and cut them open. First placing
+            butter on each and applying the first layer of cheese. The beans
+            can now be added with the rest of the cheese.
+          </p>
+          <p>
+            For the buttercream, put 100g chopped milk chocolate in a heatproof
+            bowl and melt in the microwave, stirring every 30 secs. Leave the
+            melted chocolate to cool for 5 mins.
+          </p>
+          <p>
+            A healthier alternative would be to swap the butter for margarine
+            and remove the salt. You can also add a side of salad.
+          </p>
+        </ol>
+      </div>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </div>
