@@ -20,7 +20,9 @@ Rails.application.routes.draw do
     resources :recipe_comments
   end
 
-  resources :blogs
+  resources :blogs do
+    resources :blog_comments
+  end
 
   resources :about
 
