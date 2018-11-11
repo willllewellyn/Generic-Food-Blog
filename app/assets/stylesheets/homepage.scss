@@ -110,9 +110,11 @@
     .img-container {
       float: left;
       width: 20%;
+      max-height: 360px;
       padding: 5px;
       margin: 5px;
       background-color: #f8f8f8;
+      // border: 2px solid green;
 
       img {
         width: 100%;
