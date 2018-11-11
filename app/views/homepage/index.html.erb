@@ -1,8 +1,157 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <h1>Hello, Rails!</h1>
-    <%= link_to 'My Blog', controller: 'articles' %>
+
+    <div class="slideshow_container">
+      <div class="mySlides fade">
+        <img src="<%= asset_path('cold.png') %>">
+        <div class="text">
+          <h2>
+            Caption Text Caption Text Caption Text
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="<%= asset_path('cold.png') %>">
+        <div class="text">
+          <h2>
+            Caption Two Caption Two Caption Two
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="<%= asset_path('cold.png') %>">
+        <div class="text">
+          <h2>
+            Caption Three Caption Three Caption Three
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam
+          </p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="bottom_menu">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Pasta Based') %>
+          <h2>Pasta Based</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Potato Based') %>
+          <h2>Potato Based</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Seasonal') %>
+          <h2>Seasonal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Drinks') %>
+          <h2>Drinks</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Baking') %>
+          <h2>Baking</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Flour') %>
+          <h2>Drinks</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+      <%= link_to root_path do %>
+        <div class="img-container">
+          <%= image_tag('chocolate cake.png', :alt => 'Misc') %>
+          <h2>Misc</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+        </div>
+      <% end %>
+    </div>
+
   </div>
   <%= render 'shared/footer' %>
 </div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
