@@ -96,7 +96,7 @@
   to {opacity: 1}
 }
 
-* {box-sizing: border-box;}
+* { box-sizing: border-box; }
 
 .clearfix {
   width: 70%;
@@ -106,13 +106,13 @@
 
   a {
     margin: 0 auto;
-    
+
     .img-container {
       float: left;
-      width: 16.6%;
+      width: 20%;
+      height: 285px;
       padding: 5px;
       margin: 5px;
-      min-width: 200px;
       background-color: #f8f8f8;
 
       img {
@@ -145,17 +145,28 @@
     display: table;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .slideshow_container {
-    // max-width: 70%;
-
-    .text {
-      left: 8%;
+@media only screen and (min-width: 1200px) {
+  .clearfix {
+    a {
+      .img-container {
+        min-width: 200px;
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .slideshow_container .text {
+      left: 8%;
+
 
     .bottom_menu {
       display: none;
     }
+  }
+
+  .clearfix a .img-container {
+    min-width: 200px;
   }
 }
 
@@ -177,10 +188,24 @@
 
 @media only screen and (max-width: 768px) {
   .slideshow_container {
-    // max-width: 100%;
+    margin-bottom: 140px;
 
     .text {
       bottom: -80%;
+    }
+  }
+
+  .clearfix a .img-container {
+    width: 30%;
+    height: 100%;
+    min-width: 150px;
+
+    h2 {
+      border-bottom: 0px solid #ffffff;
+    }
+
+    p {
+      display: none;
     }
   }
 }
@@ -188,26 +213,18 @@
 @media only screen and (max-width: 600px) {
   .slideshow_container {
     max-width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 190px;
 
     .text {
       bottom: -90%;
     }
   }
 
-  .foodcategories {
-    max-width: 100%;
-
-    .foodtype {
-      // width: 33.3%;
-      min-width: 100px;
-
-      img {
-        // height: 75px !important;
-        // width: 75px !important;
-        width: 100%
-      }
-    }
+  .clearfix {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -216,6 +233,17 @@
     .text {
       bottom: -175px;
       left: 0%;
+    }
+  }
+
+  .clearfix a .img-container {
+    width: 33.3%;
+    height: 170px;
+    max-width: 100px;
+
+    h2 {
+      margin-top: 5px;
+      padding-bottom: 0px;
     }
   }
 }
