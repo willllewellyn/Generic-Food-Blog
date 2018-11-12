@@ -7,9 +7,3 @@
   <strong>Comment:</strong>
   <%= recipe_comment.body %>
 </p>
-
-<p>
-  <%= link_to 'Destroy Comment', [recipe_comment.recipe, recipe_comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
