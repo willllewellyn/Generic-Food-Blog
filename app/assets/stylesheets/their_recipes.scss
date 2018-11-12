@@ -253,53 +253,6 @@
   max-width: 700px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .picture {
-    width: 40%;
-  }
-
-  .description {
-    min-width: 310px;
-  }
-
-  .ingredients {
-    width: 80%;
-    min-width: 310px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-
-  .method {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .picture {
-    width: 100%;
-
-    .polaroid {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .description {
-    width: 100%;
-  }
-
-  .ingredients {
-    width: 100%;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-
-  .method {
-    width: 100%;
-  }
-}
-
 * { box-sizing: border-box; }
 
 .clearfix {
@@ -348,6 +301,66 @@
     content: "";
     clear: both;
     display: table;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .picture {
+    width: 40%;
+  }
+
+  .description {
+    min-width: 310px;
+  }
+
+  .ingredients {
+    width: 80%;
+    min-width: 310px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .method {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .picture {
+    width: 100%;
+
+    .polaroid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .ingredients {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .method {
+    width: 100%;
+  }
+
+  .clearfix a .img-container {
+    width: 30%;
+    min-width: 150px;
+
+    h2 {
+      border-bottom: 0px solid #ffffff;
+    }
+
+    p {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
