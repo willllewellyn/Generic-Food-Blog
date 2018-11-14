@@ -1,24 +1,26 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <p>
-      <strong>Title:</strong>
-      <%= @article.title %>
-    </p>
+    <div class='articleBlogRecipe'>
+      <p>
+        <strong>Title:</strong>
+        <%= @article.title %>
+      </p>
 
-    <p>
-      <strong>Text:</strong>
-      <%= @article.text %>
-    </p>
+      <p>
+        <strong>Text:</strong>
+        <%= @article.text %>
+      </p>
 
-    <h2>Comments</h2>
-    <%= render @article.article_comments %>
+      <h2>Comments</h2>
+      <%= render @article.article_comments %>
 
-    <h2>Add a comment:</h2>
-    <%= render 'article_comments/form' %>
+      <h2>Add a comment:</h2>
+      <%= render 'article_comments/form' %>
 
-    <%= link_to 'Edit', edit_article_path(@article) %> |
-    <%= link_to 'Back', articles_path %>
+      <%= link_to 'Edit', edit_article_path(@article) %> |
+      <%= link_to 'Back', articles_path %>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </div>

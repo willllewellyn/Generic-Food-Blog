@@ -1,33 +1,55 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <p>
-      <strong>Title:</strong>
-      <%= @recipe.title %>
-    </p>
+    <div class='articleBlogRecipe'>
+      <div class='titleAuthor'>
+        <div class='title'>
+          <h2>
+            <strong>Title:</strong>
+            <%= @recipe.title %>
+          </h2>
+        </div>
 
-    <p>
-      <strong>Author:</strong>
-      <%= @recipe.author %>
-    </p>
+        <div class='author'>
+          <h2>
+            <strong>Author:</strong>
+            <%= @recipe.author %>
+          </h2>
+        </div>
+      </div>
 
-    <p>
-      <strong>Ingredient:</strong>
-      <%= @recipe.ingredient %>
-    </p>
+      <div class='yourIngredientsMethod'>
+        <div class='yourIngredients'>
+          <p>
+            <strong>Ingredients:</strong>
+          </p>
+          <p>
+            <%= @recipe.ingredient %>
+          </p>
+        </div>
 
-    <p>
-      <strong>Method:</strong>
-      <%= @recipe.method %>
-    </p>
+        <div class='yourMethod'>
+          <p>
+            <strong>Method:</strong>
+          </p>
+          <p>
+            <%= @recipe.method %>
+          </p>
+        </div>
+      </div>
 
-    <h2>Comments</h2>
-    <%= render @recipe.recipe_comments %>
+      <div class='backButton'>
+        <%= link_to 'Back', recipes_path %>
+      </div>
 
-    <h2>Add a comment:</h2>
-    <%= render 'recipe_comments/form' %>
+      <div class='comments'>
+        <h2>Submit:</h2>
+        <%= render 'recipe_comments/form' %>
 
-    <%= link_to 'Back', recipes_path %>
+        <h2>Comments</h2>
+        <%= render @recipe.recipe_comments %>
+      </div>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </div>
