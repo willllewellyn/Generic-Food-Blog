@@ -253,18 +253,46 @@
   max-width: 700px;
 }
 
+.show {
+  display: block;
+}
+
+.myBtnContainer {
+  width: 70%;
+  margin-bottom: 10px;
+
+  .btn {
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #dddddd;
+  }
+
+  .btn.active {
+    background-color: #666666;
+    color: #ffffff;
+  }
+}
+
 * { box-sizing: border-box; }
 
 .clearfix {
   width: 70%;
-  border-top: 2px solid #bbbbbb;
   padding-top: 10px;
   margin-bottom: 50px;
+  border-top: 2px solid #bbbbbb;
+  padding-top: 20px;
 
   a {
     margin: 0 auto;
 
-    .img-container {
+    .filterDiv {
       float: left;
       width: 20%;
       max-height: 360px;
@@ -272,6 +300,7 @@
       margin: 5px;
       background-color: #f8f8f8;
       // border: 2px solid green;
+      display: none;
 
       img {
         width: 100%;
@@ -349,7 +378,7 @@
     width: 100%;
   }
 
-  .clearfix a .img-container {
+  .clearfix a .filterDiv {
     width: 30%;
     min-width: 150px;
 
@@ -366,7 +395,7 @@
 @media only screen and (min-width: 1200px) {
   .clearfix {
     a {
-      .img-container {
+      .filterDiv {
         min-width: 200px;
       }
     }
@@ -374,13 +403,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .clearfix a .img-container {
+  .clearfix a .filterDiv {
     min-width: 200px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .clearfix a .img-container {
+  .clearfix a .filterDiv {
     width: 30%;
     min-width: 150px;
 
@@ -404,7 +433,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .clearfix a .img-container {
+  .clearfix a .filterDiv {
     width: 33.3%;
     height: 170px;
     max-width: 100px;

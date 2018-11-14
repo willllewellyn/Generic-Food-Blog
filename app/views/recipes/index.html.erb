@@ -1,38 +1,40 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <h1>Your Recipes</h1>
-    <p>
-      Why not <%= link_to 'add your own!', new_recipe_path %>
-    </p>
+    <div class='preamble'>
+      <h1>Your Recipes</h1>
+      <p>
+        Why not <%= link_to 'add your own!', new_recipe_path %>
+      </p>
+    </div>
+    <div class='dbTable'>
+      <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter...">
+      <table class="order-table table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ingredients</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter">
-    <table class="order-table table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Ingredients</th>
-          <th></th>
-        </tr>
-      </thead>
+        <tbody>
+        <% @recipes.each do |recipe| %>
+          <tr>
+            <td><%= recipe.title %></td>
+            <td><%= recipe.author %></td>
+            <td><%= recipe.ingredient %></td>
+            <td><%= link_to 'View', recipe_path(recipe) %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
 
-      <tbody>
-      <% @recipes.each do |recipe| %>
-        <tr>
-          <td><%= recipe.title %></td>
-          <td><%= recipe.author %></td>
-          <td><%= recipe.ingredient %></td>
-          <td><%= link_to 'View', recipe_path(recipe) %></td>
-        </tr>
+      <%= form_with scope: :recipe, url: recipes_path, local: true do |form| %>
+        ...
       <% end %>
-      </tbody>
-    </table>
-
-    <%= form_with scope: :recipe, url: recipes_path, local: true do |form| %>
-      ...
-    <% end %>
-
+    </div>
   </div>
 </div>
 <%= render 'shared/footer' %>
