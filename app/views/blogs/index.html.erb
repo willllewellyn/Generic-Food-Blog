@@ -1,33 +1,62 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <h1>Blog</h1>
-    <%= link_to 'New blog', new_blog_path %>
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Text</th>
-        <th colspan="3"></th>
-      </tr>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Listing Blogs</h1>
+      <p>
+        Why not <%= link_to 'add your own!', new_blog_path %>
+      </p>
+    </div>
 
-      <% @blogs.each do |blog| %>
-        <tr>
-          <td><%= blog.title %></td>
-          <td><%= blog.text %></td>
-          <td><%= link_to 'Show', blog_path(blog) %></td>
-          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-          <td><%= link_to 'Destroy', blog_path(blog),
-                  method: :delete,
-                  data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </table>
+
+    <div class='dbTable'>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Title...">
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Text</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <% @blogs.each do |blog| %>
+          <tr>
+            <td><%= blog.title %></td>
+            <td><%= blog.text %></td>
+            <td><%= link_to 'View', blog_path(blog) %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
 
     <%= form_with scope: :blog, url: blogs_path, local: true do |form| %>
       ...
     <% end %>
-
-    <%= link_to 'Back', blogs_path %>
   </div>
   <%= render 'shared/footer' %>
 </div>
+
+<script>
+  function myFunction() {
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
