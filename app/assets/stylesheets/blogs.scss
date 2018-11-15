@@ -1,3 +1,140 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#myInput {
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  thead, th, td  {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  th {
+    background-color: #ffffff;
+    color: #76d7c4;
+  }
+
+  th, td {
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+  }
+
+  td {
+    max-width: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  tr:hover {
+    transition-duration: 0.2s;
+    background-color: #dddddd;
+  }
+}
+
+.leftContent {
+  width: 70%;
+  min-width: 300px;
+  margin-right: 0px;
+
+  .title {
+    float: left;
+    width: 50%;
+  }
+
+  .blogText {
+    width: 80%;
+    float: left;
+  }
+
+  .leftContent::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .backButton {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .comments {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .commenter {
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px),
+(min-width: 768px) and (max-width: 1024px)  {
+  table { width: 100%; }
+
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #cccccc; }
+
+	td {
+		border: none;
+		border-bottom: 1px solid #eeeeee;
+		position: relative;
+		padding-left: 45% !important;
+	}
+
+	td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 55%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	td:nth-of-type(1):before { content: "Title"; }
+	td:nth-of-type(2):before { content: "Text"; }
+}
+
+@media only screen and (max-width: 768px) {
+  .articleBlogRecipe {
+    width: 60%;
+
+    .leftContent {
+      width: 100%;
+
+      .blogText{
+        float: left;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .leftContent {
+    width: 100%;
+  }
+}

@@ -84,6 +84,12 @@ body::after {
   padding-bottom: 40px;
 }
 
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 a {
   transition-duration: 0.2s;
 }
@@ -96,6 +102,13 @@ a {
   width: 70%;
   border-top: 2px solid #bbbbbb;
   padding-top: 20px;
+}
+
+.leftContent {
+  width: 70%;
+  min-width: 300px;
+  margin-right: 0px;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
