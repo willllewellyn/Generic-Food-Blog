@@ -1,0 +1,30 @@
+<div class='sidebar'>
+  <div class="clearfixSidebar">
+    <div class='center'>
+      <div class="img-container">
+        <%= link_to about_index_url do %>
+          <%= image_tag('gears.png', :alt => 'What Are We Doing') %>
+          <h2>What we're doing</h2>
+          <p>
+            A more detailed explanation of what we're doing on this website
+            (don't worry the Russians on have like 30% to do) about the data
+            we're collecting on the website
+          </p>
+        <% end %>
+      </div>
+    </div>
+    <div class='center'>
+      <div class="img-container">
+        <%= link_to their_recipes_path do %>
+          <%= image_tag('pasta_dishes.png', :alt => 'Their Recipes') %>
+          <h2>Their Recipes</h2>
+          <p>
+            Why not take a look at the recipes we've scoured from the internet!
+            We've got recipes for anything from health-consciousa pasta dishes to
+            delicious doughnuts
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
