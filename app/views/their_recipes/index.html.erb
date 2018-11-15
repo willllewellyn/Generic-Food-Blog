@@ -1,6 +1,7 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
+    <%= render 'shared/sidebar' %>
     <div class='preamble'>
       <h1>Their Recipes</h1>
       <p>
@@ -12,14 +13,14 @@
 
     <div class="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('asian')"> Asian</button>
+      <button class="btn" onclick="filterSelection('baking')"> Baking</button>
+      <button class="btn" onclick="filterSelection('drinks')"> Drinks</button>
+      <button class="btn" onclick="filterSelection('healthy')"> Healthy</button>
       <button class="btn" onclick="filterSelection('pasta_dishes')"> Pasta Dishes</button>
       <button class="btn" onclick="filterSelection('potato_dishes')"> Potato Dishes</button>
-      <button class="btn" onclick="filterSelection('seasonal')"> Seasonal</button>
-      <button class="btn" onclick="filterSelection('drinks')"> Drinks</button>
-      <button class="btn" onclick="filterSelection('baking')"> Baking</button>
-      <button class="btn" onclick="filterSelection('healthy')"> Healthy</button>
       <button class="btn" onclick="filterSelection('q&e')"> Quick and Easy</button>
-      <button class="btn" onclick="filterSelection('asian')"> Asian</button>
+      <button class="btn" onclick="filterSelection('seasonal')"> Seasonal</button>
       <button class="btn" onclick="filterSelection('misc')"> Misc</button>
     </div>
 
@@ -54,14 +55,12 @@
     var x, i;
     x = document.getElementsByClassName("filterDiv");
     if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {
       w3RemoveClass(x[i], "show");
       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
   }
 
-  // Show filtered elements
   function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
@@ -73,7 +72,6 @@
     }
   }
 
-  // Hide elements that are not selected
   function w3RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
@@ -86,7 +84,6 @@
     element.className = arr1.join(" ");
   }
 
-  // Add active class to the current control button (highlight it)
   var btnContainer = document.getElementById("myBtnContainer");
   var btns = btnContainer.getElementsByClassName("btn");
   for (var i = 0; i < btns.length; i++) {
