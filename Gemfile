@@ -37,7 +37,7 @@ gem 'loofah', '>= 2.2.3'
 
 source 'https://rubygems.org'
 gem 'nokogiri'
-gem 'rack', '~> 2.0.1'
+gem 'rack', '~> 2.0.6'
 gem 'rspec'
 
 # Reduces boot times through caching; required in config/boot.rb
