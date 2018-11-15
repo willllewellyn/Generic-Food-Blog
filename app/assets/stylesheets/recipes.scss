@@ -1,7 +1,5 @@
-
 .light-table-filter {
   width: 30%;
-  // float: right;
   font-size: 16px;
   padding: 12px 20px 12px 20px;
   border: 1px solid #ddd;
@@ -27,14 +25,24 @@ table {
       padding-left: 40px;
   }
 
+  td {
+    max-width: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
   tr:hover {
     transition-duration: 0.2s;
     background-color: #dddddd;
   }
 }
 
-.articleBlogRecipe {
+.leftContent {
   width: 70%;
+  min-width: 300px;
+  margin-right: 0px;
+  overflow: hidden;
 
   .titleAuthor{
     float: left;
@@ -65,7 +73,7 @@ table {
     }
   }
 
-  .ingredientsMethod::after {
+  .leftContent::after {
       content: "";
       clear: both;
       display: table;
@@ -74,10 +82,12 @@ table {
   .backButton {
     width: 100%;
     float: left;
+    margin-bottom: 20px;
   }
 
   .comments {
     float: left;
+    width: 100%;
     margin-bottom: 50px;
 
     h2 {
@@ -129,8 +139,8 @@ table {
 }
 
 @media only screen and (max-width: 768px) {
-  .articleBlogRecipe {
-    width: 100%;
+  .leftContent {
+    width: 60%;
 
     .yourIngredientsMethod {
       width: 100%;
@@ -145,5 +155,11 @@ table {
         width: 100%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .leftContent {
+    width: 100%;
   }
 }

@@ -1,24 +1,33 @@
 <%= render 'shared/header' %>
 <div class='container'>
   <div class='content'>
-    <p>
-      <strong>Title:</strong>
-      <%= @blog.title %>
-    </p>
+    <%= render 'shared/sidebar' %>
+    <div class='leftContent'>
+      <div class='title'>
+        <h2>
+          <strong>Title:</strong>
+          <%= @blog.title %>
+        </h2>
+      </div>
 
-    <p>
-      <strong>Text:</strong>
-      <%= @blog.text %>
-    </p>
+      <div class='blogText'>
+        <p>
+          <%= @blog.text %>
+        </p>
+      </div>
 
-    <h2>Comments</h2>
-    <%= render @blog.blog_comments %>
+      <div class='backButton'>
+        <%= link_to 'Back', blogs_path %>
+      </div>
 
-    <h2>Add a comment:</h2>
-    <%= render 'blog_comments/form' %>
+      <div class='comments'>
+        <h2>Add a comment:</h2>
+        <%= render 'blog_comments/form' %>
 
-    <%= link_to 'Edit', edit_blog_path(@blog) %> |
-    <%= link_to 'Back', blogs_path %>
+        <h2>Comments</h2>
+        <%= render @blog.blog_comments %>
+      </div>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </div>
