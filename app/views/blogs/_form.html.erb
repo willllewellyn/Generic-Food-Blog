@@ -14,18 +14,26 @@
     </div>
   <% end %>
 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
-
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class='leftContent'>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :title %>
+      </div>
+      <div class="col-75">
+        <%= form.text_field :title, placeholder: "Title...", maxlength: 50 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :text %>
+      </div>
+      <div class="col-75">
+        <%= form.text_area :text, placeholder: "Blog away...", maxlength: 5000 %>
+      </div>
+    </div>
+    <div class="row">
+      <%= form.submit 'Create Blog', class: 'submitButton' %>
+    </div>
+  </div>
 
 <% end %>
