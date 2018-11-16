@@ -14,28 +14,42 @@
     </div>
   <% end %>
 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-
-  <p>
-    <%= form.label :author %><br>
-    <%= form.text_field :author %>
-  </p>
-
-  <p>
-    <%= form.label :ingredient %><br>
-    <%= form.text_area :ingredient %>
-  </p>
-
-  <p>
-    <%= form.label :method %><br>
-    <%= form.text_area :method %>
-  </p>
-
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class='leftContent'>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :title %>
+      </div>
+      <div class="col-75">
+        <%= form.text_field :title, placeholder: "Title...", maxlength: 50 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :author %>
+      </div>
+      <div class="col-75">
+        <%= form.text_field :author, placeholder: "Author...", maxlength: 50 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :ingredients %>
+      </div>
+      <div class="col-75">
+        <%= form.text_area :ingredient, placeholder: "Ingredients...", maxlength: 5000 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :method %>
+      </div>
+      <div class="col-75">
+        <%= form.text_area :method, placeholder: "Method...", maxlength: 5000 %>
+      </div>
+    </div>
+    <div class="row">
+      <%= form.submit 'Create Recipe', class: 'submitButton' %>
+    </div>
+  </div>
 
 <% end %>
