@@ -1,13 +1,25 @@
 <%= form_with(model: [ @recipe, @recipe.recipe_comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :comment %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class='addComment'>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :name %>
+      </div>
+      <div class="col-75">
+        <%= form.text_field :commenter,
+          class: 'commentName', placeholder: "Name...", maxlength: 50 %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <%= form.label :comment %>
+      </div>
+      <div class="col-75">
+        <%= form.text_field :body,
+          class: 'commentInput', placeholder: "Comment...", maxlength: 255 %>
+      </div>
+    </div>
+    <div class="row">
+      <%= form.submit ' Comment', class: 'submitButton' %>
+    </div>
+  </div>
 <% end %>
