@@ -1,0 +1,89 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('template.png', :alt => 'template') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            template
+          </p>
+          <p>
+            <%= link_to "Template Template - template template template",
+            "template template template",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                template template template template template template template
+                template template template template template template template
+              </p>
+              <p>
+                Prep: xx hour xx min
+                Cook: xx hour xx min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> template </li>
+                <li> template </li>
+                <li> template </li>
+                <li> template </li>
+                <li> template </li>
+                <li> template </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            template
+          </p>
+          <p>
+            template
+          </p>
+          <p>
+            template
+          </p>
+          <p>
+            template
+          </p>
+          <p>
+            template
+          </p>
+          <p>
+            template
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
