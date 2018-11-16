@@ -1,3 +1,18 @@
-// Place all the styles related to the Recipecomments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.row .col-75 {
+  width: 80%;
+  padding-right: 15px;
+
+  .commentName {
+    width: 30%;
+  }
+
+  .commentInput {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content .col-75 .commentName {
+    width: 100%;
+  }
+}
