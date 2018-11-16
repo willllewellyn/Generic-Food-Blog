@@ -1,0 +1,107 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('fruit_clafoutis.png', :alt => 'Fruit Clafoutis') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Fruit Clafoutis
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Grandma's Favorite Recipes",
+            "https://imgur.com/gallery/p8vcHl1",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A French dessert that's perfect for using up summer fruit, or
+                really whatever you happen to have to hand!
+              </p>
+              <p>
+                Prep: 20 min
+                Cook: 50 min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 tablespoon unsalted butter </li>
+                <li> 12 ounces fresh fruit, such as cherries, berries, or stone fruit </li>
+                <li> 1 cup whole milk </li>
+                <li> 1/2 cup granulated sugar </li>
+                <li> 3 large eggs </li>
+                <li> 1 teaspoon vanilla extract </li>
+                <li> 1/2 cup all-purpose flour </li>
+                <li> 1 teaspoon fine salt </li>
+                <li> Powdered sugar, for serving (optional) </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Heat the oven and butter the pan: Arrange a rack in the middle of
+            the oven and heat to 400°F. Coat a 10-inch cast iron skillet with
+            the butter and set aside.
+          </p>
+          <p>
+            Prepare the fruit: Remove the stems and pit the cherries. Pitted
+            cherries can go in whole or halved, raspberries whole, fresh figs
+            and strawberries halved as well. Other stone fruit like peaches and
+            apricots should be pitted and thinly sliced; set aside.
+          </p>
+          <p>
+            Blend the wet ingredients: Combine the milk, sugar, eggs, and
+            vanilla in a blender or food processor fitted with the blade
+            attachment and process until the batter is smooth, about 20 seconds.
+          </p>
+          <p>
+            Pulse in the dry ingredients: Add the flour, zest, and salt and
+            pulse until just incorporated, 5 to 7 pulses.
+          </p>
+          <p>
+            Add the batter to the pan: Pour the batter into the prepared pan.
+            Top evenly with the fruit.
+          </p>
+          <p>
+            Bake: Bake until set, puffed, and light golden brown around the
+            edges, about 50 minutes.
+          </p>
+          <p>
+            Cool and serve: Place the skillet on a wire rack and let cool for
+            15 minutes (the clafoutis will deflate). Dust with powdered sugar
+            if using, cut into wedges or scoop and serve warm.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
