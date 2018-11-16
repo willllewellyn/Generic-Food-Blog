@@ -1,0 +1,108 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('template.png', :alt => 'template') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Injera
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Grandma's Favorite Recipes",
+            "https://imgur.com/gallery/p8vcHl1",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Injera (Ethiopian Sour Flatbread) It's a kind of sour flatbread
+              </p>
+              <p>
+                Prep: 1 hour xx min
+                Cook: (Overnight) 40 min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2 cups teff flour </li>
+                <li> 2 cup all-purpose flour </li>
+                <li> 1/2 teaspoon salt </li>
+                <li> 5 cups lukewarm water </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            In a large mixing bowl, combine the flours and salt until well mixed
+          </p>
+          <p>
+            Add the water, stirring until combined.
+          </p>
+          <p>
+            Cover loosely with a paper towel and let stand, undisturbed overnight.
+          </p>
+          <p>
+            Gently agitate the mixture with a wooden spoon in the morning
+            (there should be bubbles already forming on the surface, and the
+            fermenting water should have risen to the top).
+          </p>
+          <p>
+            Cover again and let stand at room temperature, undisturbed overnight.
+          </p>
+          <p>
+            Repeat this cycle once more.
+          </p>
+          <p>
+            After 3 to 4 days, your injera should smell sour and be very
+            bubbly, which means that it's ready! Stir the mixture until combined.
+          </p>
+          <p>
+            Heat a large, lightly-oiled heavy-bottomed skillet over medium-high
+            heat. Add about 1/3 cup of the batter to the skillet, forming a thin
+            layer of batter over the pan. Cook until bubbles form on the entire
+            surface of the flatbread (do not flip; only cook one side like a crepe).
+          </p>
+          <p>
+            Using a metal spatula, remove the injera and transfer to a plate.
+          </p>
+          <p>
+            Repeat until all of the batter is used, adding oil to the skillet
+            as necessary.
+          </p>
+          <p>
+            Serve with spicy vegetables, lentils, or meat dishes of your choice.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

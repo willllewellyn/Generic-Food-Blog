@@ -296,10 +296,10 @@
       float: left;
       width: 20%;
       max-height: 360px;
+      min-height: 360px;
       padding: 5px;
       margin: 5px;
       background-color: #f8f8f8;
-      // border: 2px solid green;
       display: none;
 
       img {
@@ -330,6 +330,12 @@
     content: "";
     clear: both;
     display: table;
+}
+
+@media only screen and (max-width: 1000px) {
+  .clearfix a .filterDiv{
+    min-height: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {

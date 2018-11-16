@@ -1,0 +1,110 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('asparagus_avocado_sushi.png', :alt => 'template') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Asparagus and Avocado Sushi
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Grandma's Favorite Recipes",
+            "https://imgur.com/gallery/p8vcHl1",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A delicious dish for vegan sushi lovers, mixing Japanese
+                cooking with your favourite veg and fruit  
+              </p>
+              <p>
+                Prep: 40 min
+                Cook: 30 min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 cup brown rice </li>
+                <li> 1 2-inch piece fresh ginger, peeled and thinly sliced </li>
+                <li> 1/4 cup brown rice vinegar </li>
+                <li> 1 tbsp raw honey </li>
+                <li> 1/4 tsp sea salt </li>
+                <li> 5 sheets nori seaweed, divided </li>
+                <li> 1/4 cup sesame seeds </li>
+                <li> 2 tbsp nutritional yeast </li>
+                <li> 4 spears asparagus, trimmed </li>
+                <li> 2 shiitake mushrooms, thinly sliced </li>
+                <li> 1/2 avocado, peeled, pitted and thinly sliced </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Cook rice according to package directions.
+          </p>
+          <p>
+            Meanwhile, prepare pickled ginger: In a small pot, bring 1/2 cup
+            water to a boil. Turn off heat and add ginger.
+          </p>
+          <p>
+            In a small bowl, combine vinegar, honey and salt. Add ginger and
+            1/4 cup ginger soaking water, stirring until honey dissolves. Let
+            sit for 30 minutes. Drain.
+          </p>
+          <p>
+            Cut 1 nori sheet into small ribbons. Add to rice and stir to
+            combine. Stir in sesame seeds and yeast; set rice aside until cool.
+          </p>
+          <p>
+            Assemble sushi: On sushi mat, arrange 1 nori sheet. Spread
+            1/4-inch-thick layer of rice over sheet, leaving a 2-inch border at
+            edge farthest from you.
+          </p>
+          <p>
+            Horizontally arrange 1 spear asparagus, 2
+            slices mushroom and 2 slices avocado 1 inch from edge closest to
+            you. Grab edge of mat closest to you and roll towards top; moisten
+            top border with water and press to seal.
+          </p>
+          <p>
+            Let rest for 2 minutesvbefore removing mat. With a sharp knife,
+            slice roll into rounds. Repeat with remaining nori and fillings.
+          </p>
+          <p>
+            Serve with ginger.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

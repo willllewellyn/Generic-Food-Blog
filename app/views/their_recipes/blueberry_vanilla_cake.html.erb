@@ -1,0 +1,96 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('blueberry_vanilla_cake.png', :alt => 'Blueberry Cake') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            No-Bake Blueberry Vanilla Cake (Vegan)
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Grandma's Favorite Recipes",
+            "https://imgur.com/gallery/p8vcHl1",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                How does a no-bake (perfect for when you does't have an oven!)
+                blueberry vanillia cake topped with blueberrys sound?
+              </p>
+              <p>
+                Prep: 30 mins
+                Cook: 4 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 cup almonds, soaked in filtered water for at least 8
+                  hours and drained </li>
+                <li> 3/4 cup dates, pitted and diced </li>
+                <li> 2 cups cashews, soaked in filtered water for at least 6
+                  hours and then drained </li>
+                <li> 1/4 cup coconut oil, melted </li>
+                <li> 3/4 cup dates </li>
+                <li> 2-3 teaspoon vanilla paste </li>
+                <li> 1 1/2 cups water </li>
+                <li> 2 cups blueberries  </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Pulse the almonds to fine crumbles and transfer to a medium-sized
+            bowl. Pulse the dates to crumbles and add to the bowl, mix well.
+          </p>
+          <p>
+            Line the spring-form with baking paper. Pour the almond-date-dough
+            into the cake pan and press it even with your hands.
+          </p>
+          <p>
+            Place in freezer while preparing the rest. For the filling, blend
+            all ingredients but the blueberries to a fine cream. Take the cake
+            pan out of the freezer and pour in the cashew cream.
+          </p>
+          <p>
+            Then add the remaining 2 cups of blueberries.
+          </p>
+          <p>
+            Place the cake in the freezer until set, approximately 4 hours.
+            It’s best to take the ring off and to move the cake onto a plate
+            while it is still semi-frozen. Slice and serve.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

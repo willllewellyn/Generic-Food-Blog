@@ -25,6 +25,15 @@
     </div>
 
     <div class="clearfix">
+      <%= link_to their_recipes_asparagus_avocado_sushi_path do %>
+        <div class="filterDiv asian">
+          <%= image_tag('asparagus_avocado_sushi.png', :alt => 'Asparagus & Avocado Sushi') %>
+          <h2>Asparagus & Avocado Sushi</h2>
+          <p>
+            A delicious dish for vegan sushi lovers
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_baked_potatoes_path do %>
         <div class="filterDiv potato_dishes">
           <%= image_tag('baked_potatoes.png', :alt => 'Baked Potatoes') %>
@@ -34,12 +43,40 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_blueberry_vanilla_cake_path do %>
+        <div class="filterDiv baking">
+          <%= image_tag('blueberry_vanilla_cake.png', :alt => 'Blueberry Vanilla Cake') %>
+          <h2>Blueberry Vanilla Cake</h2>
+          <p>
+            Blueberries! Blueberries! Hope you like blueberries
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_chocolate_cake_path do %>
         <div class="filterDiv baking">
           <%= image_tag('chocolate_cake.png', :alt => 'Chocolate Cake') %>
           <h2>Chocolate Cake</h2>
           <p>
             Indulge yourself with this heavenly chocolate cake.
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_fruit_clafoutis_path do %>
+        <div class="filterDiv baking">
+          <%= image_tag('fruit_clafoutis.png', :alt => 'Fruit Clafoutis') %>
+          <h2>Fruit Clafoutis</h2>
+          <p>
+            A French dessert that's perfect for using up summer fruit, or
+            really whatever you happen to have to hand!
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_injera_path do %>
+        <div class="filterDiv asian">
+          <%= image_tag('injera.png', :alt => 'Injera') %>
+          <h2>Injera</h2>
+          <p>
+            Injera (Ethiopian Sour Flatbread) It's a kind of sour flatbread
           </p>
         </div>
       <% end %>
