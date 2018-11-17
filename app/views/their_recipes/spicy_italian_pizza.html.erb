@@ -1,0 +1,101 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('spicy_italian_pizza.png', :alt => 'Spicy Italian Pizza') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Spicy Italian Pizza
+          </p>
+          <p>
+            <%= link_to "Baker - BakingGlory",
+            "http://www.bakingglory.com/recipes/pizza/spicy-italian-pizza/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Okay, family friendly thoughts. Who wants some spicy Italian Pizza?
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 10-15 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> ½ cup of pizza sauce (make your own or store bought is fine) </li>
+                <li> 1 tbsp fresh oregano </li>
+                <li> ½ cup mozzarella, shredded </li>
+                <li> 1 tbsp fresh basil </li>
+                <li> ¼ cup olives </li>
+                <li> 1 oz (30g) hot Italian sausage (fried for few minutes) </li>
+                <li> 1 oz (30g) hot Calabrese salami </li>
+                <li> 1 oz (30g) hot Genoa salami </li>
+                <li> 1 oz (30g) hot Capocollo salami </li>
+                <li> 1 oz (30g) Pepperoni, thinly sliced </li>
+                <li> ¼ cup cherry tomatoes (different colors) </li>
+                <li> 1 oz (30g) Shiitake mushrooms </li>
+                <li> 1-2 oz (30-60g) Kalamata olives </li>
+                <li> Pepper to taste </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 500° F / 260° C.
+          </p>
+          <p>
+            Roll out the pizza dough and drizzle a bit of olive oil then place
+            your dough on the pan.
+          </p>
+          <p>
+            Spread pizza sauce evenly than sprinkle mozzarella, the more the
+            merrier.
+          </p>
+          <p>
+            Cook your sausages as much as you want, either in a pan or on bbq.
+            Slice thinly and set aside.
+          </p>
+          <p>
+            Evenly spread all ingredients, starting with meat and ending with
+            tomatoes and olives.
+          </p>
+          <p>
+            Bake for 10 to 15 minutes or until cheese is bubbly and crust is
+            puffy-golden.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
