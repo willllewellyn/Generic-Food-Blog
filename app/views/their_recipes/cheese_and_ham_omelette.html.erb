@@ -1,0 +1,100 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('cheese_and_ham_omelette.png', :alt => 'Cheese and Hame Omelette') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Cheese and Hame Omelette
+          </p>
+          <p>
+            <%= link_to "Raymond Blanc - BBC Food",
+            "https://www.bbc.com/food/recipes/cheeseomelette_80621",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A classic omelette recipe, held together with strong cheese and
+                mature ham
+              </p>
+              <p>
+                Prep: 30 mins
+                Cook: 10 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 3 free-range eggs </li>
+                <li> 10g/½oz unsalted butter </li>
+                <li> 30g/1oz cheddar, preferably Montgomery cheddar </li>
+                <li> 1 thick slice ham, finely chopped </li>
+                <li> Salt and freshly ground black pepper </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Gently beat the eggs together in a mixing bowl and season, to taste,
+            with salt and pepper.
+          </p>
+          <p>
+            Heat the butter in a frying pan until foaming. Pour in the eggs and
+            cook for a few seconds, until the bottom of the omelette is lightly
+            set. Push the set parts of the omelette into the uncooked centre of
+            the omelette.
+          </p>
+          <p>
+            Cook again, until the omelette has set further, then
+            push those set parts into the centre of the omelette again. Repeat
+            the process until the eggs have just set but the omelette is still
+            soft in the centre.
+          </p>
+          <p>
+            Put the cheese and three-quarters of the ham in the centre of the
+            omelette and cook until the cheese has melted.
+          </p>
+          <p>
+            Increase the heat to high and cook the omelette for a further 30
+            seconds, or until it browns on the bottom.
+          </p>
+          <p>
+            Fold the omelette in half, then remove the pan from the heat and
+            tilt it slightly to move the omelette to the edge of the pan. Slide
+            the omelette onto a serving plate, then shape it into a neat roll.
+            Sprinkle over the remaining ham.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

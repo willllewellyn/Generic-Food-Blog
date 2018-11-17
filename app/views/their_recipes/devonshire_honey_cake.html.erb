@@ -1,0 +1,95 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('devonshire_honey_cake.png', :alt => 'Devonshire Honey Cake') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Devonshire Honey Cake
+          </p>
+          <p>
+            <%= link_to "Geraldene Holt - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/1840/devonshire-honey-cake",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Devonshire honey cake, perfect for a cream tea
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 1 hour 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 250g clear honey, plus about 2 tbsp extra to glaze </li>
+                <li> 225g unsalted butter </li>
+                <li> 100g dark muscovado sugar </li>
+                <li> 3 large eggs, beaten </li>
+                <li> 300g self-raising flour </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to fan 140C/ conventional 160C/gas 3. Butter and
+            line a 20cm round loosebottomed cake tin. Cut the butter into pieces
+            and drop into a medium pan with the honey and sugar. Melt slowly
+            over a low heat.
+          </p>
+          <p>
+            When the mixture looks quite liquid, increase the
+            heat under the pan and boil for about one minute. Leave to cool for
+            15-20 minutes, to prevent the eggs cooking when they are mixed in.
+          </p>
+          <p>
+            Beat the eggs into the melted honey mixture using a wooden spoon.
+            Sift the flour into a large bowl and pour in the egg and honey
+            mixture, beating until you have a smooth, quite runny batter.
+          </p>
+          <p>
+            Pour the mixture into the tin and bake for 50 minutes-1 hour until
+            the cake is well-risen, golden brown and springs back when pressed.
+            A skewer pushed into the centre of the cake should come out clean.
+          </p>
+          <p>
+            Turn the cake out on a wire rack. Warm 2 tbsp honey in a small pan
+            and brush over the top of the cake to give a sticky glaze, then
+            leave to cool. Keeps for 4-5 days wrapped, in an airtight tin.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

@@ -1,0 +1,99 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('honey_and_mustard_roast_gammon.png', :alt => 'Honey Mustard Roast Gammon') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Honey Mustard Roast Gammon
+          </p>
+          <p>
+            <%= link_to "Sophie Grigson - Good Food",
+            "https://goodfood.uktv.co.uk/recipe/honey-and-mustard-roast-gammon/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Roast gammon with a honey-mustard coating makes fabulous eating
+                for all occasions
+              </p>
+              <p>
+                Prep: 40 mins
+                Cook: 2 hour 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2.75 kg gammon, joint (middle cut) </li>
+                <li> 1.5 tbsp Dijon mustard, or English mustard </li>
+                <li> 2 tbsp clear honey </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Put the gammon joint into a large bowl (or spotlessly clean bucket),
+            cover with cold water and leave to soak for 24 hours. Drain well.
+          </p>
+          <p>
+            Set the oven to 160°C/gas 3. Lay a sheet of kitchen foil in a
+            roasting pan that is large enough to take the joint with some room
+            to spare. Lay a second sheet across it, at right angles. Sit the
+            gammon joint square in the middle; bring the silver foil up around
+            the gammon, sealing edges together neatly and comprehensively, to
+            form a loose, airtight wrapping around the gammon.
+          </p>
+          <p>
+            Roast for 2 hours. Increase the oven temperature to 220°C/gas 7.
+            Open up that foil and lift the gammon out onto a large chopping
+            board. Drain off all the juices. Make a couple of long cuts through
+            the outer layer of skin (but not the fat underneath). Peel the fat
+            off in strips, taking care, as it will be extremely hot.
+          </p>
+          <p>
+            Mix the mustard and honey together, and then smear thickly all over
+            the layer of fat. Next score the fat with parallel lines first in
+            one direction and then at an angle to it, to cover the joint in a
+            pattern of diamonds. Push a clove into the centre of each diamond.
+          </p>
+          <p>
+            Return the joint to the oven for a final 25 minutes or until richly
+            browned and glazed. If you are serving the joint hot, let it rest in
+            a warm place for 20-30 minutes before carving. For cold gammon,
+            leave it to cool in its own time.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
