@@ -1,0 +1,91 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('roast_leg_of_lamb.png', :alt => 'Roast Leg of Lamb') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Roast Leg of Lamb
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Family Recipes",
+            "https://imgur.com/a/gqmNvIM",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                The Greek way of doing a roast leg of lamb. They got democracy
+                right so see if they found a good way of roasting lamb
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 2 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> One 6½-pound leg of lamb </li>
+                <li> 4 garlic cloves, thinly sliced </li>
+                <li> Pinch dried oregano </li>
+                <li> Kosher salt and freshly ground black pepper, to taste </li>
+                <li> 2 tablespoons lemon juice </li>
+                <li> 2 tablespoons olive oil, divided </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 350°. Using a sharp knife, score the fat cap on
+            the lamb in a crosshatch pattern.
+          </p>
+          <p>
+            In a small bowl, toss the garlic and oregano with some salt and
+            pepper. Rub the mixture into the scores of the lamb, seasoning with
+            more salt and pepper as needed. Rub the lemon juice over the lamb,
+            then brush it with 1 tablespoon of the olive oil.
+          </p>
+          <p>
+            Wrap the leg with parchment paper then secure with butcher's twine.
+            Brush the paper with the remaining tablespoon of oil, then place
+            the whole leg in a roasting pan.
+          </p>
+          <p>
+            Roast until golden brown and the internal temperature reaches 140°,
+            2 hours. Let rest for 5 minutes, then discard the paper and string,
+            and carve, serving the slices with the pan juices.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

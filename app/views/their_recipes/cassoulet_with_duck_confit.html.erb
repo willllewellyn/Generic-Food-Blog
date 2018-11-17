@@ -1,0 +1,108 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('cassoulet_with_duck_confit.png', :alt => 'Cassoulet with Duck Confit') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Cassoulet with Duck Confit
+          </p>
+          <p>
+            <%= link_to "Laurence Jossel - Food & Wine",
+            "http://www.foodandwine.com/recipes/cassoulet-with-duck-confit",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                The classic French stew, with creamy white beans, luscious
+                duck confit, smoky French garlic sausage and slab bacon
+              </p>
+              <p>
+                Prep: 50 mins
+                Cook: 3 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 5 tablespoons extra-virgin olive oil </li>
+                <li> Two 1/2-inch-thick slices of pancetta (4 ounces), cut into 1/2-inch dice </li>
+                <li> 1 medium onion, cut into 1/2-inch dice </li>
+                <li> 1 pound dried flageolets or Great Northern beans, rinsed and picked over, then soaked for 2 hours and drained </li>
+                <li> 4 thyme sprigs </li>
+                <li> 2 quarts water </li>
+                <li> 1 quart chicken stock </li>
+                <li> 1 large head of garlic, separated into cloves and peeled </li>
+                <li> Kosher salt </li>
+                <li> 4 pieces of duck leg confit, trimmed of excess fat </li>
+                <li> 3/4 pound French garlic sausage, sliced crosswise 1/2 inch thick </li>
+                <li> 4 ounces lean slab bacon, cut into 1-inch cubes </li>
+                <li> 2 cups coarse fresh bread crumbs </li>
+                <li> 2 tablespoons chopped parsley </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            In a large saucepan, heat 3 tablespoons of the olive oil. Add the
+            pancetta and cook over moderate heat until the fat has been
+            rendered, about 5 minutes. Add the onion and cook, stirring
+            occasionally, until softened, about 7 minutes. Add the beans, thyme
+            sprigs, water and stock and bring to a boil. Simmer over low heat,
+            stirring and skimming occasionally, until the beans are al dente,
+            about 1 hour.
+          </p>
+          <p>
+            Add the garlic cloves to the beans and simmer until the garlic and
+            beans are tender, about 15 minutes. Discard the thyme sprigs.
+            Season the beans with salt and let cool to room temperature. Cover
+            and refrigerate the saucepan overnight.
+
+          </p>
+          <p>
+            Preheat the oven to 350°. Rewarm the beans over moderate heat.
+            Transfer the beans to a large, deep baking dish. Nestle the duck
+            legs, garlic sausage and bacon into the beans. Bake for about 40
+            minutes, until the cassoulet is bubbling and all of the meats are
+            hot. Remove from the oven and let rest for 15 minutes.
+          </p>
+          <p>
+            In a skillet, heat the remaining 2 tablespoons of olive oil. Add the
+            bread crumbs and cook over moderately high heat, stirring, until
+            browned and crisp, about 3 minutes. Sprinkle the bread crumbs and
+            the parsley over the cassoulet and serve.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

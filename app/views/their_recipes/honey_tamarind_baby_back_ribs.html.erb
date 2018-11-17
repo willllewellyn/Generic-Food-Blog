@@ -1,0 +1,95 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('honey_tamarind_baby_back_ribs.png', :alt => 'Honey-Tamarind Baby Back Ribs') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Honey-Tamarind Baby Back Ribs
+          </p>
+          <p>
+            <%= link_to "Susan Spungen - Food & Wine",
+            "http://www.foodandwine.com/recipes/honey-tamarind-baby-back-ribs",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Baby back ribs, baby back ribs, baby back ribs, baby back ribs
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 3 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2 racks baby back ribs (5 1/4 pounds) </li>
+                <li> Kosher salt and freshly ground black pepper </li>
+                <li> 1/2 cup clover or other mild honey </li>
+                <li> 1/4 cup ketchup </li>
+                <li> 2 tablespoons soy sauce </li>
+                <li> 2 teaspoons grated fresh ginger </li>
+                <li> 1 1/2 teaspoons tamarind concentrate </li>
+                <li> 2 garlic cloves, coarsely chopped </li>
+                <li> 1/2 teaspoon Asian chile paste, such as sambal oelek </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 275°. Line a rimmed baking sheet with foil.
+            Put the ribs on the baking sheet and season on both sides with salt
+            and black pepper. Bake the ribs, meaty side up, for 2 1/2 hours, or
+            until tender.
+          </p>
+          <p>
+            Meanwhile, in a food processor, blend the honey, ketchup, soy sauce,
+            ginger, tamarind, garlic and chile paste until smooth.
+          </p>
+          <p>
+            Increase the oven temperature to 450°. Drain the fat from the baking
+            sheet. Brush the ribs with the barbecue sauce. Roast the ribs, bony
+            side up, for 10 minutes, until richly browned.
+          </p>
+          <p>
+            Turn the ribs over, brush with more sauce and roast for 5 minutes,
+            until browned. Brush the ribs with the remaining barbecue sauce and
+            roast for 5 minutes longer, until deeply browned and glossy.
+            Transfer to a cutting board and let stand for 5 minutes. Cut the
+            racks into ribs and serve.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

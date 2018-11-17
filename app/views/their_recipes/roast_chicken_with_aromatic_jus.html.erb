@@ -1,0 +1,102 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('roast_chicken_with_aromatic_jus.png', :alt => 'Roast Chicken with Aromatic Jus') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Roast Chicken with Aromatic Jus
+          </p>
+          <p>
+            <%= link_to "Melissa Rubel Jacobson - Food & Wine",
+            "https://www.foodandwine.com/recipes/august-2007-roast-chicken-with-aromatic-jus",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Who doesn't love a roast chicken, especially with an aromatic jus 
+              </p>
+              <p>
+                Prep: 15 mins
+                Cook: 1 hour 20 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> One 3 1/2-pound chicken </li>
+                <li> 1/2 small orange </li>
+                <li> Quartered 3 garlic cloves </li>
+                <li> Crushed 2 scallions, cut crosswise into 2-inch lengths </li>
+                <li> One 1-inch piece of fresh ginger, thinly sliced </li>
+                <li> 2 teaspoons kosher salt </li>
+                <li> 1 teaspoon ground fennel seeds </li>
+                <li> 1/2 teaspoon freshly ground pepper </li>
+                <li> 2 teaspoons Asian sesame oil </li>
+                <li> 1/2 cup low-sodium chicken broth </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 425°. Set the chicken, breast side up, in a
+            medium roasting pan. Loosely stuff the cavity with the orange
+            quarters, garlic, scallions and ginger.
+          </p>
+          <p>
+            In a small bowl, mix the salt with the fennel and pepper. Rub the
+            chicken with the sesame oil and season all over with the salt mixture.
+          </p>
+          <p>
+            Roast the chicken in the center of the oven for 1 hour, or until the
+            juices run clear and an instant-read thermometer inserted in the
+            inner thigh registers 160°.
+          </p>
+          <p>
+            Carefully scoop the aromatics from the cavity into the roasting pan.
+            Transfer the chicken to a cutting board and let rest for 10 minutes.
+          </p>
+          <p>
+            Meanwhile, squeeze the juice from the orange quarters and discard
+            the peels. Set the roasting pan over moderately high heat.
+          </p>
+          <p>
+            Add the chicken broth and simmer for 1 minute, scraping up the
+            browned bits from the bottom of the pan. Strain the pan juices
+            into a gravy boat or small serving bowl and spoon off the fat.
+            Carve the chicken and serve with the jus.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

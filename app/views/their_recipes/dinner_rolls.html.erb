@@ -1,0 +1,114 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('dinner_rolls.png', :alt => 'Dinner Rolls') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Dinner Rolls
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Family Recipes",
+            "https://imgur.com/a/gqmNvIM",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Warm, crunchy on the outside yet soft on the inside, homemade
+                dinner rolls sound good to you? (Who doesn't want to gorge 
+                themselves on bread?)
+              </p>
+              <p>
+                Prep: 3 hours 15 min
+                Cook: 15 min
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 3-1/2 cups unbleached white bread flour </li>
+                <li> 1/2 tablespoon salt </li>
+                <li> 1 package active dry yeast </li>
+                <li> 3/4 cup lukewarm water, divided (see recipe notes) </li>
+                <li> 1 teaspoon sugar </li>
+                <li> 1/2 cup lukewarm milk (see recipe notes) </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Sift the flour and salt into a large mixing bowl and set aside.
+          </p>
+          <p>
+            Place 1/4 cup of the water in a 1-cup glass measure. Add the yeast
+            and stir until dissolved. Stir in the sugar and allow to stand for
+            about 10 to 15 minutes or until the bubbly froth reaches the 1/2
+            cup mark.
+          </p>
+          <p>
+            Make a well in the flour and pour in the proofed yeast mixture.
+            Add the milk and another 1/4 cup of the water and begin mixing.
+            Continue to add the final 1/4 cup of water in 1 tablespoon
+            increments until your dough is fairly moist and soft.
+          </p>
+          <p>
+            Knead for about 8 to 10 minutes, either by hand or using the dough
+            hook on a stand mixer, until the dough is smooth and elastic. Place
+            it in a lightly oiled bowl, cover it with a damp towel and allow to
+            rise at room temperature for about 2 hours, or until doubled in bulk.
+          </p>
+          <p>
+            Turn the dough out onto a lightly floured surface and punch down.
+            Cover again and let it rest for about 5 minutes, then divide it into
+            12 pieces.
+          </p>
+          <p>
+            Gently roll each piece into an oval shape. Place them on 2 lightly
+            greased baking sheets about two inches apart. Cover them with a
+            damp towel and allow them to rise for about 30 minutes. Using the
+            thin side of a spatula handle, make a deep impression in the center
+            of each roll. Cover again and let rest for another 15 minutes.
+          </p>
+          <p>
+            While the rolls are resting, place an oven-proof dish with about
+            1-1/2-inches of water in it in the lower third of your oven and
+            preheat to 450°F.
+          </p>
+          <p>
+            Bake the rolls for 15 minutes, until golden brown. Cool on a wire
+            rack for about 5 minutes and serve warm.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

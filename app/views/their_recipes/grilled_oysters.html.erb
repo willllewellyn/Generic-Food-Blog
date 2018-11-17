@@ -1,0 +1,88 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('grilled_oysters.png', :alt => 'Grilled Oysters') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Grilled Oysters
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Family Recipes",
+            "https://imgur.com/a/gqmNvIM",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Grilled Oysters, not for everyone but for those who like
+                oysters definitely one of the best ways of cooking them
+              </p>
+              <p>
+                Prep: 15 min
+                Cook: 11 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2 cups butter, softened  </li>
+                <li> 1/2 cup finely grated Parmesan cheese  </li>
+                <li> 1/4 cup finely chopped parsley  </li>
+                <li> 2 garlic cloves, minced  </li>
+                <li> 1 tablespoon Worcestershire sauce  </li>
+                <li> 1 teaspoon paprika  </li>
+                <li> 1/2 teaspoon ground red pepper  </li>
+                <li> 1/2 teaspoon hot sauce 2 dozen large fresh oysters on the half shell </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat grill to 450°. Pulse first 8 ingredients in a food processor
+            until well combined.
+          </p>
+          <p>
+            Arrange oysters in a single layer on grill. Spoon 2 tsp. butter
+            mixture into each oyster; grill, uncovered, 7 minutes or until
+            edges curl.
+          </p>
+          <p>
+            Broiled Oysters: Preheat broiler with oven rack 3 inches from heat.
+            Prepare recipe as directed, placing oysters in a single layer in a
+            jelly-roll pan. Broil 4 minutes or until edges curl and butter drips
+            over the shell.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+  </div>

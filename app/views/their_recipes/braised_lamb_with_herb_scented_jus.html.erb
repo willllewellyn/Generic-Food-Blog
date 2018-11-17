@@ -1,0 +1,101 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('braised_lamb_with_herb_scented_jus.png', :alt => 'Braised Lamb with Herb-Scented Jus') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Braised Lamb with Herb-Scented Jus
+          </p>
+          <p>
+            <%= link_to "Food & Wine",
+            "https://www.foodandwine.com/recipes/braised-lamb-with-herb-scented-jus",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Tender braised leg of lamb to be served on a bed of vegtables
+              </p>
+              <p>
+                Prep: 30 mins
+                Cook: 4 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 large onion, quartered </li>
+                <li> 1 leek, halved lengthwise </li>
+                <li> 1 fennel bulb, quartered </li>
+                <li> 1 large carrot, quartered </li>
+                <li> 1 garlic head, halved horizontally </li>
+                <li> 3 thyme sprigs </li>
+                <li> 3 parsley sprigs </li>
+                <li> 3 rosemary sprigs </li>
+                <li> 1 fresh bay leaf </li>
+                <li> 1 tablespoon whole black peppercorns </li>
+                <li> One 8-pound semi-boneless leg of lamb (aitch bone removed) </li>
+                <li> Salt </li>
+                <li> 2 quarts chicken stock or low-sodium broth </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 500°.
+          </p>
+          <p>
+            In a roasting pan that’s large enough to hold the lamb, spread out
+            the vegetables, herbs and peppercorns. Season the lamb generously
+            with salt.
+          </p>
+          <p>
+            Set the lamb on top of the vegetables and roast for about 25
+            minutes, until the lamb is lightly browned.
+          </p>
+          <p>
+            Add the stock to the pan and cover the pan with foil. Reduce the
+            oven temperature to 300° and braise the lamb for 2 hours. Uncover
+            the lamb and cook for 1 hour longer, until deeply browned on top
+            and the meat is very tender.
+          </p>
+          <p>
+            Let the lamb rest in the juices for 15 minutes, then transfer it to
+            a carving board. Strain the cooking juices, discarding the solids,
+            and spoon off the fat. Slice the lamb 1/4 inch thick and serve with
+            some of the cooking juices.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
