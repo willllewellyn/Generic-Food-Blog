@@ -1,0 +1,118 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('chocolate_macarons.png', :alt => 'Chocolate Macarons') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Chocolate Macarons
+          </p>
+          <p>
+            <%= link_to "Imgur User: WannaWanga - Family Recipes",
+            "https://imgur.com/a/gqmNvIM",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A sweet meringue-based French confection, not to be confused with a
+                macroon
+              </p>
+              <p>
+                Prep: 30 mins
+                Cook: 10-15 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> Makes about 25 sandwiched macarons </li>
+                <li> 1 cup (125g) powdered sugar </li>
+                <li> 1/2 cup (50g) powdered almonds </li>
+                <li> 3 tbsp (25g) unsweetened cocoa powder </li>
+                <li> 2 large egg whites (66g), at room temperature </li>
+                <li> Pinch of salt </li>
+                <li> 5 tbsp (75g) granulated sugar </li>
+                <li> 1/2 cup (120g) heavy cream </li>
+                <li> 4 ounces (120g) bitter sweet chocolate, finely chopped </li>
+                <li> 1 tbsp (14g) unsalted butter, optional </li>
+                <li> 1 tsp instant coffee, optional </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat oven to 350ºF (180ºC). Line two baking sheets with parchment
+            paper and have a pastry bag with a plain tip (about 1/2-inch, 1cm) ready.
+          </p>
+          <p>
+            Grind together the powdered sugar with the almond powder and cocoa
+            so there are no lumps; use a blender or food processor. Then sift
+            the mixture into a large bowl and discard the larger lumps.
+          </p>
+          <p>
+            Using a mixer beat the egg whites until they begin to rise and hold
+            their shape. While whipping, beat in the granulated sugar until very
+            stiff and firm, about 2 minutes.
+          </p>
+          <p>
+            Fold the dry ingredients, in two batches, into the beaten egg whites
+            with a rubber spatula.
+          </p>
+          <p>
+            When the mixture is smooth and there are no streaks of egg white,
+            stop folding and scrape the batter into the pastry bag. (standing
+            the bag in a tall glass helps if you’re alone).
+          </p>
+          <p>
+            Allow the macarons to sit for 20 to 30 minutes until a “skin” forms
+            and they are no longer wet when lightly touched. Bake them for 10-15
+            minutes. Let cool completely then remove from baking sheet.
+          </p>
+          <p>
+            To make the chocolate filling: in a small saucepan heat the cream
+            and instant coffee if used. When the cream just begins to boil at
+            the edges, remove from heat and pour over the chopped chocolate.
+          </p>
+          <p>
+            Let sit one minute, then stir until smooth. Stir in the butter. Let
+            cool completely before using. Spread a bit of batter on the inside
+            of the macarons then sandwich them together.
+          </p>
+          <p>
+            Let them stand at least one day before serving, to meld the flavors.
+            Serve macarons at room temperature.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

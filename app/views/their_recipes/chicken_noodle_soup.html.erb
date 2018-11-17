@@ -1,0 +1,96 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('chicken_noodle_soup.png', :alt => 'Classic Chicken Noodle Soup') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Classic Chicken Noodle Soup
+          </p>
+          <p>
+            <%= link_to "Grace Parisi - Food & Wine",
+            "https://www.foodandwine.com/recipes/classic-chicken-noodle-soup",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A delightful and classic chicken soup
+              </p>
+              <p>
+                Prep: 45 mins
+                Cook: 3 hours
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> One 3-pound chicken, neck reserved </li>
+                <li> 3 1/2 quarts water </li>
+                <li> 4 carrots—2 coarsely chopped, 2 sliced 1/4 inch thick </li>
+                <li> 4 celery ribs—2 coarsely chopped, 2 sliced 1/4 inch thick </li>
+                <li> 1 unpeeled onion, quartered </li>
+                <li> 1 large unpeeled garlic clove, smashed </li>
+                <li> 1 teaspoon whole black peppercorns </li>
+                <li> 1 large fresh bay leaf </li>
+                <li> 6 parsley sprigs </li>
+                <li> 2 thyme sprigs </li>
+                <li> Kosher salt </li>
+                <li> 1/2 pound thin egg noodles </li>
+                <li> 1/4 cup finely chopped flat-leaf parsley </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            In a stockpot, combine the chicken and neck, water, chopped carrots
+            and celery, onion, garlic, peppercorns and herbs; bring to a boil.
+            Cover partially and simmer over low heat for 30 minutes. Transfer
+            the chicken to a plate. Discard the skin. Pull the meat off the
+            bones, cut into 1/2-inch pieces and refrigerate.
+          </p>
+          <p>
+            Return the bones to the pot. Simmer for about 1 hour. Strain the
+            broth into a bowl and rinse out the pot. Return the broth to the
+            pot and boil until reduced to 8 cups, 30 minutes. Season with salt.
+          </p>
+          <p>
+            Add the sliced carrots and celery to the broth, cover and simmer
+            until just tender, 12 minutes. In a saucepan of boiling salted
+            water, cook the noodles; drain and cool under running water. Add the
+            noodles, chicken and parsley to the pot and bring to a simmer.
+            Ladle the soup into bowls and serve hot.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

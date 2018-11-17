@@ -1,0 +1,101 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('pan_roast_salmon_with_tomato_viniagrette.png', :alt => 'Pan-Roasted Salmon with Tomato Vinaigrette') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Pan-Roasted Salmon with Tomato Vinaigrette
+          </p>
+          <p>
+            <%= link_to "Ted Allen - Food & Wine",
+            "https://www.foodandwine.com/recipes/pan-roasted-salmon-with-tomato-vinaigrette",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Grape tomatoes sautéed with capers, shallot and cumin form a
+                bright, chunky sauce for seared salmon
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 pint grape tomatoes, halved </li>
+                <li> 1 medium shallot, thinly sliced </li>
+                <li> 1 tablespoon drained capers </li>
+                <li> 2 tablespoons red wine vinegar </li>
+                <li> Salt 3 tablespoons extra-virgin olive oil </li>
+                <li> 4 center-cut salmon fillets with skin (about 7 ounces each) </li>
+                <li> Freshly ground pepper </li>
+                <li> 1/2 teaspoon ground cumin </li>
+                <li> 2 tablespoons canola oil </li>
+                <li> 1 tablespoon minced parsley </li>
+                <li> 1 tablespoon chopped basil </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat the oven to 425°. In a bowl, toss the tomatoes with the
+            shallot, capers, vinegar and 1/2 teaspoon of salt.
+          </p>
+          <p>
+            In a medium ovenproof skillet, heat 1 tablespoon of the olive oil.
+            Season the salmon with salt and pepper and add it to the skillet,
+            skin side up. Cook over moderately high heat until well-browned on
+            the bottom, about 3 minutes. Carefully flip the fillets.
+          </p>
+          <p>
+            Transfer the skillet to the oven and roast until the salmon is
+            cooked through, about 7 minutes. Transfer the fish to plates and
+            pour off any fat in the skillet.
+          </p>
+          <p>
+            Place the skillet over moderate heat and add the tomato mixture
+            along with the cumin, canola oil and the remaining 2 tablespoons of
+            olive oil.
+          </p>
+          <p>
+            Cook, scraping up any bits stuck to the skillet, until
+            the tomatoes just soften, about 2 minutes. Pour the sauce over the
+            salmon, sprinkle with the parsley and basil and serve right away.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
