@@ -1,0 +1,99 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('welsh_rarebit.png', :alt => 'Welsh Rarebit') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Welsh Rarebit
+          </p>
+          <p>
+            <%= link_to "dnorriss - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/1500641/welsh-rarebit",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Welsh rarebit, one of the most famous Welsh dishes of them all
+                (cheese sauce on toast)
+              </p>
+              <p>
+                Prep: 5 mins
+                Cook: 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 225g grated, strong cheese such as Cheddar or Cheshire </li>
+                <li> 1 tablespoon butter </li>
+                <li> 2 teaspoons Worcestershire sauce </li>
+                <li> 1 level teaspoon dry mustard </li>
+                <li> 2 teaspoons flour </li>
+                <li> Shake of pepper </li>
+                <li> 4 tablespoons beer, Guiness or milk (Guiness gives a stronger flavour) </li>
+                <li> 4 slices bread toasted on 1 side only </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Put the cheese, butter, Worcestershire sauce, mustard, flour and
+            pepper into a saucepan.
+          </p>
+          <p>
+            Mix well and then add the beer, Guiness or milk to moisten. Do not
+            make it too wet!!
+          </p>
+          <p>
+            Stir over a gentle heat until all is melted, and when it is a
+            thickish paste, stop stirring, and swivel it around the saucepan,
+            which it will do quite easily.
+          </p>
+          <p>
+            Leave to cool a little, and meanwhile toast the bread on one side
+            only.
+          </p>
+          <p>
+            Spread the rarebit over the untoasted side and brown under a hot
+            grill.
+          </p>
+          <p>
+            This mixture can be made and kept in the refrigerator for several
+            days if required. Sweet white wine can be used instead of beer and
+            gives a good flavour.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

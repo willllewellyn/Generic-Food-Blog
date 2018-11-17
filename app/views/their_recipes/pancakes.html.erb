@@ -1,0 +1,92 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('pancakes.png', :alt => 'Pancakes') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Pancakes
+          </p>
+          <p>
+            <%= link_to "Cassie Best - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/2907669/easy-pancakes",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Ohh my god pancakes pancakes pancakes!
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 20 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 100g plain flour </li>
+                <li> 2 large eggs </li>
+                <li> 300ml milk </li>
+                <li> 1 tbsp sunflower or vegetable oil, plus a little extra for frying </li>
+                <li> Lemon wedges, to serve (optional) </li>
+                <li> Caster sugar, to serve (optional) </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or
+            vegetable oil and a pinch of salt into a bowl or large jug, then
+            whisk to a smooth batter.
+          </p>
+          <p>
+            Set aside for 30 mins to rest if you have time, or start cooking
+            straight away.
+          </p>
+          <p>
+            Set a medium frying pan or crêpe pan over a medium heat and
+            carefully wipe it with some oiled kitchen paper.
+          </p>
+          <p>
+            When hot, cook your pancakes for 1 min on each side until golden,
+            keeping them warm in a low oven as you go.
+          </p>
+          <p>
+            Serve with lemon wedges and caster sugar, or your favourite filling.
+            Once cold, you can layer the pancakes between baking parchment,
+            then wrap in cling film and freeze for up to 2 months.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

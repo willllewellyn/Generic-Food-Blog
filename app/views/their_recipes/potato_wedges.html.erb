@@ -1,0 +1,88 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('potato_wedges.png', :alt => 'Potato Wedges') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Potato Wedges
+          </p>
+          <p>
+            <%= link_to "Jamie Oliver - Jamie Oliver",
+            "https://www.jamieoliver.com/recipes/vegetables-recipes/potato-wedges/#IBZJZ9j18LPFO2oQ.97",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                These chunky, peppery golden potato wedges are always a winner
+                at parties and barbecues
+              </p>
+              <p>
+                Prep: 15 mins
+                Cook: 45 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> Sea salt </li>
+                <li> Freshly ground black pepper </li>
+                <li> 600g baking potatoes </li>
+                <li> Olive oil </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat your oven to 200˚C/400˚F/gas 6. Put a large pan of salted
+            water on to boil.
+          </p>
+          <p>
+            Scrub the potatoes clean and get rid of any gnarly bits. Cut the
+            potatoes into chunky wedges. Add to the pan of boiling water and
+            parboil for 8 minutes. Drain in a colander and leave to steam dry
+            for a couple of minutes.
+          </p>
+          <p>
+            Transfer to a roasting tray and add a good lug of olive oil and a
+            pinch of salt and pepper. Toss together so all the wedges are coated
+            in the oil then spread out in one layer.
+          </p>
+          <p>
+            Cook in the hot oven for 30 minutes until golden, crisp and cooked
+            through. Delicious served with steak or chicken.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

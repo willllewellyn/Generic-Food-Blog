@@ -1,0 +1,82 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('caramelised_onions.png', :alt => 'Caramelised Onions') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Caramelised Onions
+          </p>
+          <p>
+            <%= link_to "Valli Little - taste",
+            "https://www.taste.com.au/recipes/caramelised-onions/5e9306e9-8c70-48dc-98ea-d1f646b6065d",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Okay caramelised onions are delicious and are amazing with/on
+                anything
+              </p>
+              <p>
+                Prep: 5 mins
+                Cook: 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 2 tablespoons olive oil </li>
+                <li> 3 large red onions or brown onions, sliced </li>
+                <li> 2 tablespoons brown sugar </li>
+                <li> 1-2 tablespoons balsamic vinegar </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Heat oil in a large frypan over low heat. Add the onions and a good
+            pinch of salt and cook very slowly for 15-20 minutes, stirring
+            occasionally to prevent them from catching. Don't be tempted to turn
+            the heat up, as you don't want the onions to burn.
+          </p>
+          <p>
+            When onions are softened and tinged golden, add sugar and balsamic -
+            this will start the caramelisation process. Cook onion over low heat
+            for a further 5-10 minutes, stirring occasionally, until sticky and
+            caramelised. Use immediately, or store in the fridge, in a
+            sterilised jar or plastic container, and use when required.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

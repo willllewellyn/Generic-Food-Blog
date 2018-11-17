@@ -25,9 +25,10 @@
       <button class="btn" onclick="filterSelection('healthy')"> Healthy</button>
       <button class="btn" onclick="filterSelection('pizza')"> Pizza</button>
       <button class="btn" onclick="filterSelection('meat')"> Meat</button>
+      <button class="btn" onclick="filterSelection('movie')"> Movie Food</button>
       <button class="btn" onclick="filterSelection('pasta_dishes')"> Pasta Dishes</button>
       <button class="btn" onclick="filterSelection('potato_dishes')"> Potato Dishes</button>
-      <button class="btn" onclick="filterSelection('q&e')"> Quick and Easy</button>
+      <button class="btn" onclick="filterSelection('easy')"> Quick and Easy</button>
       <button class="btn" onclick="filterSelection('roast')"> Roast</button>
       <button class="btn" onclick="filterSelection('seasonal')"> Seasonal</button>
       <button class="btn" onclick="filterSelection('soup')"> Soup</button>
@@ -82,6 +83,16 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_beef_stew_with_dumplings_path do %>
+        <div class="filterDiv meat">
+          <%= image_tag('beef_stew_with_dumplings.png', :alt => 'Beef Stew with Dumplings') %>
+          <h2>Beef Stew with Dumplings</h2>
+          <p>
+            A rich beef stew with fluffy dumplings to warm you right down to
+            your toes
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_beef_tenderloin_steaks_with_celert_root_gratin_path do %>
         <div class="filterDiv meat">
           <%= image_tag('beef_tenderloin_steaks_with_celert_root_gratin.png', :alt => 'Beef Tenderloin Steaks with Celery Root Gratins') %>
@@ -120,6 +131,16 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_caramelised_onions_path do %>
+        <div class="filterDiv easy misc">
+          <%= image_tag('caramelised_onions.png', :alt => 'Caramelised Onions') %>
+          <h2>Caramelised Onions</h2>
+          <p>
+            Okay caramelised onions are delicious and are amazing with/on
+            anything
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_cassoulet_with_duck_confit_path do %>
         <div class="filterDiv meat">
           <%= image_tag('cassoulet_with_duck_confit.png', :alt => 'Cassoulet with Duck Confit') %>
@@ -129,22 +150,22 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_cheese_and_ham_omelette_path do %>
+        <div class="filterDiv healthy easy">
+          <%= image_tag('cheese_and_ham_omelette.png', :alt => 'Cheese and Hame Omelette') %>
+          <h2>Cheese and Hame Omelette</h2>
+          <p>
+            A classic omelette recipe, held together with strong cheese and
+            mature ham
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_chicken_noodle_soup_path do %>
         <div class="filterDiv asian soup">
           <%= image_tag('chicken_noodle_soup.png', :alt => 'Classic Chicken Noodle Soup') %>
           <h2>Classic Chicken Noodle Soup</h2>
           <p>
             A delightful and classic chicken soup
-          </p>
-        </div>
-      <% end %>
-      <%= link_to their_recipes_over_the_top_mushroom_quiche_path do %>
-        <div class="filterDiv vegie">
-          <%= image_tag('over_the_top_mushroom_quiche.png', :alt => 'Over The Top Mushroom Quiche') %>
-          <h2>Over The Top Mushroom Quiche</h2>
-          <p>
-            A high rise quiche, layered with sautéed mushrooms and shredded
-            cheese
           </p>
         </div>
       <% end %>
@@ -175,6 +196,15 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_devonshire_honey_cake_path do %>
+        <div class="filterDiv baking">
+          <%= image_tag('devonshire_honey_cake.png', :alt => 'Devonshire Honey Cake') %>
+          <h2>Devonshire Honey Cake</h2>
+          <p>
+            Devonshire honey cake, perfect for a cream tea
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_dinner_rolls_path do %>
         <div class="filterDiv baking">
           <%= image_tag('dinner_rolls.png', :alt => 'Dinner Rolls') %>
@@ -202,6 +232,16 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_honey_and_mustard_roast_gammon_path do %>
+        <div class="filterDiv roast meat">
+          <%= image_tag('honey_and_mustard_roast_gammon.png', :alt => 'Honey Mustard Roast Gammon') %>
+          <h2>Honey Mustard Roast Gammon</h2>
+          <p>
+            Roast gammon with a honey-mustard coating makes fabulous eating
+            for all occasions
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_honey_tamarind_baby_back_ribs_path do %>
         <div class="filterDiv meat decadence">
           <%= image_tag('honey_tamarind_baby_back_ribs.png', :alt => 'Honey-Tamarind Baby Back Ribs') %>
@@ -220,6 +260,15 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_lembas_bread_path do %>
+        <div class="filterDiv baking bread movie">
+          <%= image_tag('lembas_bread.png', :alt => 'Lembas Bread') %>
+          <h2>Lembas Bread</h2>
+          <p>
+            Ohhhhhhh lembas bread from Lord of The Rings!
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_mar_bar_cake_path do %>
         <div class="filterDiv decadence dessert">
           <%= image_tag('mar_bar_cake.png', :alt => 'Mars Bar Cake') %>
@@ -227,6 +276,15 @@
           <p>
             Okay, stop what you're doing and make this, you will not be
             disapointed
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_marshmallow_crispie_bars_path do %>
+        <div class="filterDiv decadence dessert">
+          <%= image_tag('marshmallow_crispie_bars.png', :alt => 'Marhmallow Crispie Bars') %>
+          <h2>Marhmallow Crispie Bars</h2>
+          <p>
+            Look, they're not quite Mars Bar Cake but damn, they're good
           </p>
         </div>
       <% end %>
@@ -259,12 +317,31 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_pancakes_path do %>
+        <div class="filterDiv easy">
+          <%= image_tag('pancakes.png', :alt => 'Pancakes') %>
+          <h2>Pancakes</h2>
+          <p>
+            Ohh my god pancakes pancakes pancakes!
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_potato_gnocchi_with_mushroom_ragu_path do %>
         <div class="filterDiv potato_dishes healthy">
           <%= image_tag('potato_gnocchi_with_mushroom_ragu.png', :alt => 'Potato Gnocchi with Mushroom Ragù') %>
           <h2>Potato Gnocchi with Mushroom Ragù</h2>
           <p>
             Gnocchi and mushrooms what could go wrong
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_potato_wedges_path do %>
+        <div class="filterDiv potato_dishes vegie">
+          <%= image_tag('potato_wedges.png', :alt => 'Potato Wedges') %>
+          <h2>Potato Wedges</h2>
+          <p>
+            These chunky, peppery golden potato wedges are always a winner
+            at parties and barbecues
           </p>
         </div>
       <% end %>
@@ -311,6 +388,15 @@
           <h2>Spicy Italian Pizza</h2>
           <p>
             Okay, family friendly thoughts. Who wants some spicy Italian Pizza?
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_welsh_rarebit_path do %>
+        <div class="filterDiv easy misc">
+          <%= image_tag('welsh_rarebit.png', :alt => 'Welsh Rarebit') %>
+          <h2>Welsh Rarebit</h2>
+          <p>
+            Welsh rarebit, one of the most famous Welsh dishes of them all
           </p>
         </div>
       <% end %>
