@@ -1,0 +1,104 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('mar_bar_cake.png', :alt => 'Mars Bar Cake') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Mars Bar Cake
+          </p>
+          <p>
+            <%= link_to "Bake Play Smile",
+            "https://bakeplaysmile.com/mars-bar-slice-is-very-very-nice/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Okay, stop what you're doing and make this, you will not be
+                disapointed
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 3 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 75g butter </li>
+                <li> 3 X 52g Mars Bars chopped </li>
+                <li> 1 tbs golden syrup </li>
+                <li> 3 cups rice bubbles or any puffed rice </li>
+                <li> 250g milk chocolate melts </li>
+                <li> 20g coconut oil or vegetable oil (optional) </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Grease and line a 18X22cm rectangular slice tin with baking paper
+            and set aside.
+          </p>
+          <p>
+            Melt the butter, two of the Mars Bars and golden syrup on low heat
+            in a saucepan (or in 30 second bursts in the microwave on 50%
+            power). Please note: the Mars Bars will not melt - that is fine!
+          </p>
+          <p>
+            Mix until the butter and golden syrup are smooth.
+          </p>
+          <p>
+            Stir in the rice bubbles and the third Mars Bar (chopped).
+          </p>
+          <p>
+            Press mixture firmly into the prepared tin.
+          </p>
+          <p>
+            Place chocolate pieces and coconut oil/vegetable oil in a heatproof
+            bowl.
+          </p>
+          <p>
+            Microwave on medium for 3 minutes, 50% power, or until just melted,
+            stirring every 30 seconds with a metal spoon. Stir until smooth.
+          </p>
+          <p>
+            Spread over slice and refrigerate until firm.
+          </p>
+          <p>
+            Remove slice from the refrigerator about 1 hour before cutting into
+            squares with a warm knife.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

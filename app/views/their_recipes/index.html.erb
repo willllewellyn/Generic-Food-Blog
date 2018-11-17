@@ -13,15 +13,17 @@
 
     <div class="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('americas')"> Americas</button>
       <button class="btn" onclick="filterSelection('asian')"> Asian</button>
       <button class="btn" onclick="filterSelection('baking')"> Baking</button>
       <button class="btn" onclick="filterSelection('bread')"> Bread</button>
-      <button class="btn" onclick="filterSelection('crustaceans')"> Crustaceans</button>
+      <button class="btn" onclick="filterSelection('seafood')"> Seafood</button>
+      <button class="btn" onclick="filterSelection('decadence')"> Decadence</button>
       <button class="btn" onclick="filterSelection('dessert')"> Dessert</button>
       <button class="btn" onclick="filterSelection('drinks')"> Drinks</button>
       <button class="btn" onclick="filterSelection('fish')"> Fish</button>
       <button class="btn" onclick="filterSelection('healthy')"> Healthy</button>
-      <button class="btn" onclick="filterSelection('decadence')"> Decadence</button>
+      <button class="btn" onclick="filterSelection('pizza')"> Pizza</button>
       <button class="btn" onclick="filterSelection('meat')"> Meat</button>
       <button class="btn" onclick="filterSelection('pasta_dishes')"> Pasta Dishes</button>
       <button class="btn" onclick="filterSelection('potato_dishes')"> Potato Dishes</button>
@@ -34,6 +36,15 @@
     </div>
 
     <div class="clearfix">
+      <%= link_to their_recipes_acorn_squash_caramelized_onion_goat_cheese_pizza_path do %>
+        <div class="filterDiv pizza healthy">
+          <%= image_tag('acorn_squash_caramelized_onion_goat_cheese_pizza.png', :alt => 'Acorn Squash Carmelized Onion Goat Cheese Pizza') %>
+          <h2>Acorn Squash Carmelized Onion Goat Cheese Pizza</h2>
+          <p>
+            A healthy vegitarian pizza topped with a range of toppings
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_asparagus_avocado_sushi_path do %>
         <div class="filterDiv asian healthy">
           <%= image_tag('asparagus_avocado_sushi.png', :alt => 'Asparagus & Avocado Sushi') %>
@@ -61,6 +72,16 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_beef_stew_in_red_wine_sauce_path do %>
+        <div class="filterDiv meat">
+          <%= image_tag('beef_stew_in_red_wine_sauce.png', :alt => 'Beef Stew in Red Wine Sauce') %>
+          <h2>Beef Stew in Red Wine Sauce</h2>
+          <p>
+            A brilliant *hick* stew *hick* made with *hick* plenty of *hick*
+            red wine... *hick*
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_beef_tenderloin_steaks_with_celert_root_gratin_path do %>
         <div class="filterDiv meat">
           <%= image_tag('beef_tenderloin_steaks_with_celert_root_gratin.png', :alt => 'Beef Tenderloin Steaks with Celery Root Gratins') %>
@@ -70,8 +91,18 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_bibimbap_path do %>
+        <div class="filterDiv asian meat">
+          <%= image_tag('bibimbap.png', :alt => 'Bibimbap') %>
+          <h2>Bibimbap</h2>
+          <p>
+            A Korean dish, a fried egg, carrot, spinache, steak, seasmse
+            seeds and rice
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_bouillabaisse_path do %>
-        <div class="filterDiv crustaceans fish">
+        <div class="filterDiv seafood fish">
           <%= image_tag('bouillabaisse.png', :alt => 'Bouillabaisse') %>
           <h2>Bouillabaisse</h2>
           <p>
@@ -81,7 +112,7 @@
         </div>
       <% end %>
       <%= link_to their_recipes_braised_lamb_with_herb_scented_jus_path do %>
-        <div class="filterDiv meat roast">
+        <div class="filterDiv meat roast seasonal">
           <%= image_tag('braised_lamb_with_herb_scented_jus.png', :alt => 'Braised Lamb with Herb-Scented Jus') %>
           <h2>Braised Lamb with Herb-Scented Jus</h2>
           <p>
@@ -189,6 +220,16 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_mar_bar_cake_path do %>
+        <div class="filterDiv decadence dessert">
+          <%= image_tag('mar_bar_cake.png', :alt => 'Mars Bar Cake') %>
+          <h2>Mars Bar Cake</h2>
+          <p>
+            Okay, stop what you're doing and make this, you will not be
+            disapointed
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_over_the_top_mushroom_quiche_path do %>
         <div class="filterDiv vegie">
           <%= image_tag('over_the_top_mushroom_quiche.png', :alt => 'Over The Top Mushroom Quiche') %>
@@ -199,12 +240,40 @@
           </p>
         </div>
       <% end %>
+      <%= link_to their_recipes_paella_path do %>
+        <div class="filterDiv seafood">
+          <%= image_tag('paella.png', :alt => 'Paella') %>
+          <h2>Paella</h2>
+          <p>
+            The traditional Spanish seafood dish, just don't do a Jamie
+            Oliver
+          </p>
+        </div>
+      <% end %>
       <%= link_to their_recipes_pan_roast_salmon_with_tomato_viniagrette_path do %>
         <div class="filterDiv fish healthy">
           <%= image_tag('pan_roast_salmon_with_tomato_viniagrette.png', :alt => 'Pan-Roasted Salmon with Tomato Vinaigrette') %>
           <h2>Pan-Roasted Salmon with Tomato Vinaigrette</h2>
           <p>
             Seared salmon with an amazing sauce
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_potato_gnocchi_with_mushroom_ragu_path do %>
+        <div class="filterDiv potato_dishes healthy">
+          <%= image_tag('potato_gnocchi_with_mushroom_ragu.png', :alt => 'Potato Gnocchi with Mushroom Ragù') %>
+          <h2>Potato Gnocchi with Mushroom Ragù</h2>
+          <p>
+            Gnocchi and mushrooms what could go wrong
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_pull_apart_flauta_ring_path do %>
+        <div class="filterDiv americas meat">
+          <%= image_tag('pull_apart_flauta_ring.png', :alt => 'Pull-Apart Flauta Ring') %>
+          <h2>Pull-Apart Flauta Ring</h2>
+          <p>
+            Kinda like faijitas but cooked and crispy and with chicken in
           </p>
         </div>
       <% end %>
@@ -233,6 +302,15 @@
           <p>
             Okay, we're drooling, you're drooling. What we'd do just to smell
             this one
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_spicy_italian_pizza_path do %>
+        <div class="filterDiv pizza">
+          <%= image_tag('spicy_italian_pizza.png', :alt => 'Spicy Italian Pizza') %>
+          <h2>Spicy Italian Pizza</h2>
+          <p>
+            Okay, family friendly thoughts. Who wants some spicy Italian Pizza?
           </p>
         </div>
       <% end %>

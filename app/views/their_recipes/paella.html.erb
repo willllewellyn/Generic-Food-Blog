@@ -1,0 +1,102 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('paella.png', :alt => 'Paella') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Paella
+          </p>
+          <p>
+            <%= link_to "Good Food - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/764637/easy-paella",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                The traditional Spanish seafood dish, just don't do a Jamie
+                Oliver
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 30 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 tbsp olive oil </li>
+                <li> 1 onion, chopped </li>
+                <li> 1 tsp each hot smoked paprika and dried thyme </li>
+                <li> 300g paella or risotto rice </li>
+                <li> 3 tbsp dry sherry or white wine (optional) </li>
+                <li> 400g can chopped tomatoes with garlic </li>
+                <li> 900ml chicken stock </li>
+                <li> 400g bag frozen seafood mix </li>
+                <li> Juice ½ lemon, other half cut into wedges </li>
+                <li> Handful flat-leaf parsley, roughly chopped </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Heat 1 tbsp olive oil in a large frying pan or wok. Add 1 chopped
+            onion and soften for 5 mins.
+          </p>
+          <p>
+            Stir in 1 tsp hot smoked paprika, 1 tsp dried thyme and 300g paella
+            or risotto rice, stir for 1 min, then splash in 3 tbsp sherry or
+            white wine, if using.
+          </p>
+          <p>
+            Once it has evaporated, stir in a 400g can of chopped tomatoes with
+            garlic and 900ml chicken stock.
+          </p>
+          <p>
+            Season and cook, uncovered, for about 15 mins, stirring now and
+            again until rice is almost tender and still surrounded with some
+            liquid.
+          </p>
+          <p>
+            Stir 400g frozen seafood mix into the pan and cover with a lid.
+            Simmer for 5 mins, or until the seafood is cooked through and the
+            rice is tender.
+          </p>
+          <p>
+            Squeeze over the juice of ½ lemon, scatter with a handful of
+            flat-leaf parsley and serve with wedges from the remaining ½ lemon.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

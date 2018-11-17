@@ -1,0 +1,108 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('bibimbap.png', :alt => 'Bibimbap') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Bibimbap
+          </p>
+          <p>
+            <%= link_to "BBC Good Food team - BBC Good Food",
+            "https://www.bbcgoodfood.com/recipes/cheats-bibimbap",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A Korean dish, a fried egg, carrot, spinache, steak, seasmse
+                seeds and rice
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 15 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 100g thin beef steak </li>
+                <li> 2 tsp light soy sauce, plus extra to serve </li>
+                <li> 120g rice </li>
+                <li> Sunflower oil </li>
+                <li> 1 carrot, cut into matchsticks </li>
+                <li> 50g spinach </li>
+                <li> 2 eggs </li>
+                <li> ½ tsp toasted sesame seeds </li>
+                <li> Thumb sized piece of fresh root ginger, peeled and cut into fine matchsticks </li>
+                <li> SAUCE </li>
+                <li> 2 tbsp gochujang or 4 tsp sriracha and 2 tsp white miso paste </li>
+                <li> 2 tsp toasted sesame seeds </li>
+                <li> 2 tsp cider vinegar </li>
+                <li> 4 tsp light soy sauce </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Put the steak into a bowl and add the soy sauce.
+          </p>
+          <p>
+            Boil the rice following packet instructions. Meanwhile heat 1 tsp
+            oil in a frying pan or wok then add the steak, leaving the soy sauce
+            behind in the bowl. Fry quickly at a high temperature until well
+            browned on the outside, put it onto a board and cover with foil to
+            rest.
+          </p>
+          <p>
+            Now fry the carrots in the same pan, stir frying for 2-3 mins
+            until starting to soften then transfer to a plate. Next add the
+            spinach and fry until just wilted (about a minute). Finally fry the
+            eggs, adding a little extra oil if the pan is dry.
+          </p>
+          <p>
+            When the rice is cooked, drain and pile into 2 bowls. Slice the
+            steak then put it on top of the rice. Next to that add a clump of
+            the cooked carrots, then the spinach and finally the ginger. Scatter
+            the sesame seeds over the top.
+          </p>
+          <p>
+            Stir all of the sauce ingredients
+            together in a bowl and serve alongside the rice. The best way to eat
+            it is to dollop on a good serving of the sauce, break into the egg
+            and stir everything together so the sauce and the runny egg yolk get
+            deliciously mixed up with all the vegetables and steak.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
