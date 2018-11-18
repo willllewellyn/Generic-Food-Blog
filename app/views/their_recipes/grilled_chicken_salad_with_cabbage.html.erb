@@ -1,0 +1,121 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('grilled_chicken_salad_with_cabbage.png', :alt => 'Grilled Chicken Salad with Cabbage and Raspberry Balsamic Dressing') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Grilled Chicken Salad with Cabbage and Raspberry Balsamic Dressing
+          </p>
+          <p>
+            <%= link_to "Reddit User: bob-the-cook - Reddit",
+            "https://www.reddit.com/r/recipes/comments/81zekf/grilled_chicken_salad_with_cabbage_and_raspberry/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A marinated, then grilled chicken, sitting on a bed of salad,
+                topped with a dressing
+              </p>
+              <p>
+                Prep: 45 mins
+                Cook: 8-10 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> SALAD </li>
+                <li> 1 green cabbage, halved lengthwise and thinly sliced crosswise (use a mandoline slicer for quicker and better results) </li>
+                <li> 2 (9 oz) boneless, skinless chicken breasts </li>
+                <li> 1 1/2 – 2 cups matchstick carrots, or 2 medium carrots cut into matchsticks </li>
+                <li> 1 red bell pepper, cut into small cubes </li>
+                <li> 2 handfuls of croutons ( optional for paleo) </li>
+                <li> 1/2 cup cilantro leaves, chopped </li>
+                <li> 3 chopped spring onions, green and white parts </li>
+                <li> 1 teaspoon poppy seeds, toasted </li>
+                <li> DRESSING </li>
+                <li> 1/4 cup balsamic vinegar </li>
+                <li> 1/4 cup olive oil </li>
+                <li> 1/4 cup chopped spring onions, green and white parts </li>
+                <li> A handful of raspberries </li>
+                <li> MARINADE </li>
+                <li> 1/4 cup low-sodium soy sauce </li>
+                <li> 2 tablespoons finely minced ginger </li>
+                <li> 3 tablespoons olive oil </li>
+                <li> Juice of one lime </li>
+                <li> 2 tablespoons Worcestershire sauce </li>
+                <li> 1 tablespoon toasted sesame oil </li>
+                <li> 1 teaspoon Sriracha </li>
+                <li> 2 – 3 cloves garlic, minced </li>
+                <li> 1 tablespoon honey </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            In a mixing bowl, whisk together soy sauce, ginger, olive oil, lime
+            juice, Worcestershire sauce, sesame oil, Sriracha, minced garlic and
+            honey.
+          </p>
+          <p>
+            Add chicken breasts to a large resealable bag and add 3 to 4
+            tablespoons of the marinade mixture, reserving the remaining. Seal
+            the bag and rub the marinade over chicken, then transfer chicken to
+            your refrigerator and let rest at least 30 minutes, or up to 1 day.
+          </p>
+          <p>
+            Add balsamic vinegar, olive oil, raspberries to a blender and pulse
+            to emulsify the vinaigrette. Add 1/4 cup chopped green onions and
+            whisk to combine. Set aside in the refrigerator.
+          </p>
+          <p>
+            Heat a grill or grill pan over the stove top over medium-high heat.
+            Brush grill lightly with canola or vegetable oil, then place
+            marinated chicken on the grill and cook, about 4 minutes per side,
+            or until chicken has cooked through.
+          </p>
+          <p>
+            Transfer to a cutting board and allow to rest for 10 minutes. Then,
+            cut chicken breasts crosswise into 1/4-inch strips.
+          </p>
+          <p>
+            In a large bowl toss together cabbage, chicken, carrots, spring
+            onions, bell pepper croutons and cilantro with enough raspberry
+            dressing to coat the salad. Add chicken strips, drizzle with
+            additional raspberry vinaigrette and sprinkle with poppy seeds.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
