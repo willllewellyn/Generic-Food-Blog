@@ -327,6 +327,29 @@
         color: #000000;
       }
     }
+    .nonFilterDiv {
+      float: left;
+      width: 20%;
+      max-height: 360px;
+      min-height: 360px;
+      padding: 5px;
+      margin: 5px;
+      background-color: #f8f8f8;
+
+      img {
+        width: 100%;
+      }
+
+      h2 {
+        border-bottom: 2px solid #bbbbbb;
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #000000;
+      }
+    }
   }
 
   a:hover {
@@ -344,7 +367,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .clearfix a .filterDiv{
+  .clearfix a .filterDiv {
     min-height: 100%;
   }
 }
@@ -395,7 +418,7 @@
     width: 100%;
   }
 
-  .clearfix a .filterDiv {
+  .clearfix a .filterDiv, .nonFilterDiv {
     width: 30%;
     min-width: 150px;
 
@@ -412,7 +435,7 @@
 @media only screen and (min-width: 1200px) {
   .clearfix {
     a {
-      .filterDiv {
+      .filterDiv, .nonFilterDiv {
         min-width: 200px;
       }
     }
@@ -420,13 +443,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .clearfix a .filterDiv {
+  .clearfix a .filterDiv, .nonFilterDiv {
     min-width: 200px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .clearfix a .filterDiv {
+  .clearfix a .filterDiv, .nonFilterDiv {
     width: 30%;
     min-width: 150px;
 
@@ -450,7 +473,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .clearfix a .filterDiv {
+  .clearfix a .filterDiv, .nonFilterDiv {
     width: 33.3%;
     height: 170px;
     max-width: 100px;

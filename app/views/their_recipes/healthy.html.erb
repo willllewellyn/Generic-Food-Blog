@@ -1,0 +1,55 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Healthy</h1>
+      <p>
+        Green, green, and more greens!
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_cheese_and_ham_omelette_path do %>
+        <div class="nonFilterDiv healthy easy">
+          <%= image_tag('cheese_and_ham_omelette.png', :alt => 'Cheese and Hame Omelette') %>
+          <h2>Cheese and Hame Omelette</h2>
+          <p>
+            A classic omelette recipe, held together with strong cheese and
+            mature ham
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_grilled_chicken_salad_with_cabbage_path do %>
+        <div class="nonFilterDiv meat healthy">
+          <%= image_tag('grilled_chicken_salad_with_cabbage.png', :alt => 'Grilled Chicken Salad with Cabbage and Raspberry Balsamic Dressing') %>
+          <h2>Grilled Chicken Salad with Cabbage and Raspberry Balsamic Dressing</h2>
+          <p>
+            A marinated chicken, on a bed of salad, done with dressing
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_pan_roast_salmon_with_tomato_viniagrette_path do %>
+        <div class="nonFilterDiv fish healthy">
+          <%= image_tag('pan_roast_salmon_with_tomato_viniagrette.png', :alt => 'Pan-Roasted Salmon with Tomato Vinaigrette') %>
+          <h2>Pan-Roasted Salmon with Tomato Vinaigrette</h2>
+          <p>
+            Seared salmon with an amazing sauce
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_potato_gnocchi_with_mushroom_ragu_path do %>
+        <div class="nonFilterDiv potato_dishes healthy">
+          <%= image_tag('potato_gnocchi_with_mushroom_ragu.png', :alt => 'Potato Gnocchi with Mushroom Ragù') %>
+          <h2>Potato Gnocchi with Mushroom Ragù</h2>
+          <p>
+            Gnocchi and mushrooms what could go wrong
+          </p>
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>

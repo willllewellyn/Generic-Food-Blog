@@ -1,0 +1,100 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Baking</h1>
+      <p>
+        Cakes, pies, doughnuts, etc.
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_baked_scotch_eggs_path do %>
+        <div class="nonFilterDiv meat baking">
+          <%= image_tag('baked_scotch_eggs.png', :alt => 'Baked Scotch Eggs') %>
+          <h2>Baked Scotch Eggs</h2>
+          <p>
+            A popular UK recipe made slightly healthier by baking
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_caramel_cookies_path do %>
+        <div class="nonFilterDiv baking decadence">
+          <%= image_tag('caramel_cookies.png', :alt => 'Caramel Cookies') %>
+          <h2>Caramel Cookies</h2>
+          <p>
+            Cookies with caramel inside them, sounds and is perfect
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_chocolate_cake_path do %>
+        <div class="nonFilterDiv baking">
+          <%= image_tag('chocolate_cake.png', :alt => 'Chocolate Cake') %>
+          <h2>Chocolate Cake</h2>
+          <p>
+            Indulge yourself with this heavenly chocolate cake.
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_chocolate_macarons_path do %>
+        <div class="nonFilterDiv baking">
+          <%= image_tag('chocolate_macarons.png', :alt => 'Chocolate Macrons') %>
+          <h2>Chocolate Macrons</h2>
+          <p>
+            A sweet meringue-based French confection
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_devonshire_honey_cake_path do %>
+        <div class="nonFilterDiv baking">
+          <%= image_tag('devonshire_honey_cake.png', :alt => 'Devonshire Honey Cake') %>
+          <h2>Devonshire Honey Cake</h2>
+          <p>
+            Devonshire honey cake, perfect for a cream tea
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_dinner_rolls_path do %>
+        <div class="nonFilterDiv baking">
+          <%= image_tag('dinner_rolls.png', :alt => 'Dinner Rolls') %>
+          <h2>Dinner Rolls</h2>
+          <p>
+            Warm, homemade dinner rolls sound good to you?
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_injera_path do %>
+        <div class="nonFilterDiv baking bread">
+          <%= image_tag('injera.png', :alt => 'Injera') %>
+          <h2>Injera</h2>
+          <p>
+            Injera (Ethiopian Sour Flatbread) It's a kind of sour flatbread
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_lembas_bread_path do %>
+        <div class="nonFilterDiv baking bread movie">
+          <%= image_tag('lembas_bread.png', :alt => 'Lembas Bread') %>
+          <h2>Lembas Bread</h2>
+          <p>
+            Ohhhhhhh lembas bread from Lord of The Rings!
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_russian_honey_cake_path do %>
+        <div class="nonFilterDiv baking">
+          <%= image_tag('russian_honey_cake.png', :alt => 'Russian Honey Cake') %>
+          <h2>Russian Honey Cake</h2>
+          <p>
+            Honey cake (aka Medovik) is one of the most famous Russian
+            desserts
+          </p>
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>

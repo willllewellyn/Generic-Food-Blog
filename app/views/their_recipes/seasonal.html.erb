@@ -1,0 +1,35 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Seasonal</h1>
+      <p>
+        It says seasonal but we really mean Christmas now
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_braised_lamb_with_herb_scented_jus_path do %>
+        <div class="nonFilterDiv meat roast seasonal">
+          <%= image_tag('braised_lamb_with_herb_scented_jus.png', :alt => 'Braised Lamb with Herb-Scented Jus') %>
+          <h2>Braised Lamb with Herb-Scented Jus</h2>
+          <p>
+            Tender braised leg of lamb to be served on a bed of vegtables
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_roast_leg_of_lamb_path do %>
+        <div class="nonFilterDiv meat roast seasonal">
+          <%= image_tag('roast_leg_of_lamb.png', :alt => 'Roast Leg of Lamb') %>
+          <h2>Roast Leg of Lamb</h2>
+          <p>
+            The Greek way of doing a roast leg of lamb
+          </p>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>
