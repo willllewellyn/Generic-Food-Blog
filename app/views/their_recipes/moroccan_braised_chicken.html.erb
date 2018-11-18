@@ -1,0 +1,106 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('moroccan_braised_chicken.png', :alt => 'Moroccan Braised Chicken, Lentils, Smoked Paprika & Tomato') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Moroccan Braised Chicken, Lentils, Smoked Paprika & Tomato
+          </p>
+          <p>
+            <%= link_to "Reddit User: bob-the-cook - Reddit",
+            "https://www.reddit.com/r/recipes/comments/7s8s6b/moroccan_braised_chicken_lentils_smoked_paprika/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A Moroccan dish brought to life with lentils, smoked paprika and
+                tomato
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 40 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 chicken cut into 8 pieces (or equivalent in breasts and/or thighs), skin on </li>
+                <li> 1 medium white onion, finely chopped </li>
+                <li> 2 garlic cloves, thinly sliced </li>
+                <li> 1½ Tbsp (20 mL) smoked paprika </li>
+                <li> 1 Tbsp (15 mL) cumin </li>
+                <li> 1 cup (250 mL) split red lentils, rinsed </li>
+                <li> 1 cup (250 mL) whole cherry tomatoes </li>
+                <li> 2 cups (500 mL) low sodium chicken stock </li>
+                <li> 3 bay leaves </li>
+                <li> 1 tsp (5 mL) chili flakes (optional) </li>
+                <li> Finely chopped parsley (garnish) </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+
+          <p>
+            Preheat oven to 400°F (200°C). In an ovenproof fry pan (or cast iron
+            pan) over medium/high heat add a good splash of olive oil. Pat
+            chicken on both sides with a paper towel to remove excess moisture,
+            season generously with salt and pepper on both sides and add to the
+            pan. Be sure not to crowd the pan or the chicken will steam and not
+            sear.
+          </p>
+          <p>
+            Sear the chicken in batches if required. Cook for 3 to 4
+            minutes on both sides or until golden brown. Remove pieces and set
+            aside.
+          </p>
+          <p>
+            Remove excess oil from the pan, or add more olive oil if needed.
+            Over medium heat add onions, garlic, smoked paprika, and cumin.
+          </p>
+          <p>
+            Stir for 3 to 5 minutes or until onions become transparent, but not
+            browned. Then add lentils, stock, tomatoes, bay leaves, chili flakes,
+            and chicken pieces. Slide into oven and bake for 20 to 25 mins (do
+            not add a lid to the pan). Check chicken and lentils for doneness.
+          </p>
+          <p>
+            Turn oven off and turn on broiler feature. Brown up the tomatoes for
+            a minute or so then remove pan from oven and check lentils for
+            seasoning. Garnish with finely chopped parsley and extra chili
+            flakes to taste.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

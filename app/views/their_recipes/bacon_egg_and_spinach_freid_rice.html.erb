@@ -1,0 +1,102 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('bacon_egg_and_spinach_freid_rice.png', :alt => 'Bacon Egg and Spinach Fried Rice') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Bacon Egg and Spinach Fried Rice
+          </p>
+          <p>
+            <%= link_to "Reddit User: bob-the-cook - Reddit",
+            "https://www.reddit.com/r/recipes/comments/8291cq/bacon_egg_and_spinach_fried_rice/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Bacon, a crowd pleaser. Mixed with some healthy ingredients
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 8 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1 tablespoon oil </li>
+                <li> 3 large eggs, beaten </li>
+                <li> 8 oz. lean bacon, cut small pieces </li>
+                <li> 2 cups chopped fresh spinach </li>
+                <li> 1 medium onion, finely diced </li>
+                <li> 2 cloves garlic, finely minced </li>
+                <li> 5 cups cooked rice, cooled and fluffed </li>
+                <li> 1 teaspoon salt and fresh ground black pepper, to taste </li>
+                <li> 1/4 teaspoon sugar </li>
+                <li> 3 teaspoons soy sauce </li>
+                <li> Sriracha sauce, for drizzling (optional) </li>
+                <li> 2 scallions, chopped </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Heat the oil in a large skillet or wok over medium heat and add
+            beaten eggs. Scramble the eggs gently and set aside.
+          </p>
+          <p>
+            Add the bacon pieces to the same skillet and cook until crisp.
+            Remove and set aside along with the scrambled eggs.
+          </p>
+          <p>
+            To the same skillet, add the chopped spinach and stir-fry for a
+            couple of minutes, until it starts to wilt. Remove and set aside
+            with eggs and bacon.
+          </p>
+          <p>
+            Add the diced onion and garlic to the skillet and stir-fry until
+            translucent. Add the cooked rice and stir-fry for 2 minutes. Use a
+            spatula to flatten out and break up any clumps. Add salt, sugar, and
+            soy sauce. Give everything a good stir for a couple minutes more,
+            until steam starts coming off the rice. If rice is a little dry,
+            you can sprinkle in some water or chicken stock.
+          </p>
+          <p>
+            Finally, stir in the scrambled eggs, bacon, and spinach. Season with
+            black pepper, drizzle with Sriracha and garnish with scallions.
+            Serve immediately, enjoy!
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

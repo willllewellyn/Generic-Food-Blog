@@ -1,0 +1,107 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('trout_with_garlic_lemon_butter_herb_sauce.png', :alt => 'Trout with Garlic Lemon Butter Herb Sauce') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Trout with Garlic Lemon Butter Herb Sauce
+          </p>
+          <p>
+            <%= link_to "Reddit User: bob-the-cook - Reddit",
+            "https://www.reddit.com/r/recipes/comments/6kb9ps/trout_with_garlic_lemon_butter_herb_sauce/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Just jump into your local river, grab a trout and your ready
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 10 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 1.5 pounds trout (or salmon, or arctic char) - 2 large fish fillets with skin on the bottom </li>
+                <li> 2 tablespoons olive oil (more, if needed) </li>
+                <li> 1 tablespoon Italian herb seasoning (dried thyme, oregano, parsley, combined) </li>
+                <li> Salt, to taste </li>
+                <li> 4 garlic cloves, diced </li>
+                <li> 3 tablespoons lemon juice, freshly squeezed </li>
+                <li> 2 more tablespoons white wine </li>
+                <li> 2 tablespoons butter, softened </li>
+                <li> 2 tablespoons parsley, chopped </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Season the top of fish fillets with Italian herb seasoning and salt
+            (generously). Fish fillets will have skins on the bottom - no need
+            to season the skins.
+          </p>
+          <p>
+            In a large skillet (large enough to fit 2 fish fillets), heat 2
+            tablespoons of olive oil on medium heat until heated but not
+            smoking. To the hot skillet with olive oil, add fish fillets skin
+            side up flesh side down. Cook the flesh side of the fish for about
+            3-5 minutes on medium heat, making sure the oil does not smoke,
+            until lightly browned. Flip the fillets over to the other side, skin
+            side down (add more oil, if needed). Cook for another 2-4 minutes on
+            medium heat (to prevent oil from burning). Remove the skillet from
+            heat, close with the lid, and let the fish sit for 5-10 minutes,
+            covered, in the skillet, until flaky and cooked through completely.
+          </p>
+          <p>
+            After the fish is cooked through, off heat, using spatula, carefully
+            remove fillets to the plate, separating the fish from the skin.
+            Carefully remove or scrape the fish skin off the bottom of the pan
+            making sure to leave all the cooking oils in the pan.
+          </p>
+          <p>
+            Add diced garlic, lemon juice, and white wine to the same pan with
+            oil. Cook on medium-low heat for about 1 minute, until garlic
+            softens a bit. Remove from heat. Add 1 tablespoon of chopped
+            parsley, and 2 tablespoons of butter, off heat, to the sauce,
+            stirring, until the butter melts and forms a creamy mixture.
+          </p>
+          <p>
+            Add fish to the pan, spoon sauce over the fish, top the fish and
+            sauce with the remaining 1 tablespoon of parsley, and serve.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

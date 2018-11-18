@@ -1,0 +1,95 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('chcken_pesto_pene_with_bacon_and_feta.png', :alt => 'Chicken Pesto Penne With Bacon & Feta') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Chicken Pesto Penne With Bacon & Feta
+          </p>
+          <p>
+            <%= link_to "Reddit User: icingonthesteak - Reddit",
+            "https://www.reddit.com/r/recipes/comments/9kelna/chicken_pesto_penne_with_bacon_feta/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                A simple pasta dish for all to try
+              </p>
+              <p>
+                Prep: 10 mins
+                Cook: 15 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> 300g Penne </li>
+                <li> 1 tbsp Olive Oil </li>
+                <li> 3 large Chicken Fillets breast fillets, cut into bite size pieces </li>
+                <li> 4 Short Cut Bacon Rashers diced </li>
+                <li> 100g Sun-Dried Tomatoes diced </li>
+                <li> 1/2 cup Basil Pesto </li>
+                <li> 60g Baby Spinach </li>
+                <li> 1/3 cup Thickened Cream </li>
+                <li> 100g Feta Crumbled </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Cook penne according to packet instructions. Drain and set aside.
+          </p>
+          <p>
+            Heat olive oil in a large frying pan over medium-high heat.
+          </p>
+          <p>
+            Add chicken & bacon and cook until chicken is browned.
+          </p>
+          <p>
+            Add sun-dried tomato, basil pesto & baby spinach and cook a further
+            2 minutes or so until spinach is wilted. Stir to fully combine.
+          </p>
+          <p>
+            Add thickened cream and cook a further 1-2 minutes to heat through.
+          </p>
+          <p>
+            Add penne and toss to mix through and coat with the pesto sauce.
+          </p>
+          <p>
+            Remove from heat, sprinkle with feta and serve.
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>

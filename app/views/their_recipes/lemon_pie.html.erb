@@ -1,0 +1,101 @@
+<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='picture'>
+
+      <div class="polaroid">
+        <%= image_tag('lemon_pie.png', :alt => 'Lemon Pie') %>
+        <div class="polaroid_container">
+          <p class='content_description'>
+            Lemon Pie
+          </p>
+          <p>
+            <%= link_to "Reddit User: saguad - Reddit",
+            "https://www.reddit.com/r/recipes/comments/8ojlbr/lemon_pie/",
+            :target => "_blank" %>
+          </p>
+        </div>
+      </div>
+
+      <div class='description'>
+        <ul>
+          <li>
+            <a>
+              <h2>Description:</h2>
+              <p>
+                Lemon pie, not an actual pie mind you (don't throw at clowns)
+              </p>
+              <p>
+                Prep: 20 mins
+                Cook: 45 mins
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class='ingredients'>
+        <ul>
+          <li>
+            <a>
+              <h2>Ingredients:</h2>
+              <ul>
+                <li> FILLING </li>
+                <li> 3 lemons </li>
+                <li> 3 egg yolks </li>
+                <li> 300ml condensed milk </li>
+                <li> DOUGH </li>
+                <li> 300g flour </li>
+                <li> 150g butter </li>
+                <li> Half a teaspoon of salt </li>
+                <li> 80ml milk </li>
+                <li> CANDIED LEMONS </li>
+                <li> 1 lemon </li>
+                <li> 250g sugar </li>
+                <li> 125ml water </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='method'>
+      <div class='method_text'>
+        <p>Method</p>
+      </div>
+      <div class='method_steps'>
+        <ol>
+          <p>
+            Preheat oven at 180° celsius.
+          </p>
+          <p>
+            Begin with dough. In a big bowl, mix flour and salt. Add the room
+            temperature butter cutted in small cubes. Mix by hand and add milk.
+            Keep mixing until you have a uniform dough ball. Roll out with a
+            rolling pin and place it to a buttered pie plate. Bake for 15 minutes.
+
+          </p>
+          <p>
+            Mix about a teaspoon of lemon zest, the juice of 3 lemons the egg
+            yolks, and the condensed milk. Pour it into the crust and bake it
+            for 20 minutes.
+          </p>
+          <p>
+            Candied lemons: Cut the lemon into fine rounds. In a small cooking
+            pot, cover them with water and boil them for one minute. Take the
+            remaining water and repeat the process two times. Then, add the
+            sugar and cook them for 30 minutes at low heat without stirring.
+          </p>
+          <p>
+            Decorate the lemon pie with the candied lemons
+          </p>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
