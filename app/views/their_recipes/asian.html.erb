@@ -1,0 +1,46 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Asian</h1>
+      <p>
+        Everything! As long as that's Indian, Chinese, Korean and Japanese...
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_asparagus_avocado_sushi_path do %>
+        <div class="nonFilterDiv asian healthy">
+          <%= image_tag('asparagus_avocado_sushi.png', :alt => 'Asparagus & Avocado Sushi') %>
+          <h2>Asparagus & Avocado Sushi</h2>
+          <p>
+            A delicious dish for vegan sushi lovers
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_bibimbap_path do %>
+        <div class="nonFilterDiv asian meat">
+          <%= image_tag('bibimbap.png', :alt => 'Bibimbap') %>
+          <h2>Bibimbap</h2>
+          <p>
+            A Korean dish, a fried egg, carrot, spinache, steak, seasmse
+            seeds and rice
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_chicken_noodle_soup_path do %>
+        <div class="nonFilterDiv asian soup">
+          <%= image_tag('chicken_noodle_soup.png', :alt => 'Classic Chicken Noodle Soup') %>
+          <h2>Classic Chicken Noodle Soup</h2>
+          <p>
+            A delightful and classic chicken soup
+          </p>
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>

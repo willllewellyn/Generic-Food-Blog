@@ -1,0 +1,35 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Pasta Dishes</h1>
+      <p>
+        Carb load while unleashing your inner Italian
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_chcken_pesto_pene_with_bacon_and_feta_path do %>
+        <div class="nonFilterDiv meat pasta_dishes easy">
+          <%= image_tag('chcken_pesto_pene_with_bacon_and_feta.png', :alt => 'Chicken Pesto Penne With Bacon & Feta') %>
+          <h2>Chicken Pesto Penne With Bacon & Feta</h2>
+          <p>
+            A simple pasta dish for all to try
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_creamy_scallop_fettuccine_with_lemon_and_capers_path do %>
+        <div class="nonFilterDiv pasta_dishes seafood">
+          <%= image_tag('creamy_scallop_fettuccine_with_lemon_and_capers.png', :alt => 'Creamy Scallop Fettuccine with Lemon and Capers') %>
+          <h2>Creamy Scallop Fettuccine with Lemon and Capers</h2>
+          <p>
+            A creamy pasta dish topped with scallops
+          </p>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>

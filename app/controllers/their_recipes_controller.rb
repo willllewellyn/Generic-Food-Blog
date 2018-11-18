@@ -122,4 +122,20 @@ class TheirRecipesController < ApplicationController
   def trout_with_garlic_lemon_butter_herb_sauce; end
 
   def welsh_rarebit; end
+
+  def pasta_dishes; end
+
+  def potato_dishes; end
+
+  def seasonal; end
+
+  def drinks; end
+
+  def baking; end
+
+  def healthy; end
+
+  def easy; end
+
+  def asian; end
 end

@@ -1,0 +1,63 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Potato Dishes</h1>
+      <p>
+        Boil them, mash them, stick them in a stew
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_baked_potatoes_path do %>
+        <div class="nonFilterDiv potato_dishes">
+          <%= image_tag('baked_potatoes.png', :alt => 'Baked Potatoes') %>
+          <h2>Baked Potatoes</h2>
+          <p>
+            The ultimate baked potato with cheese and baked beans.
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_garlic_butter_steak_and_potatoes_path do %>
+        <div class="nonFilterDiv potato_dishes meat easy">
+          <%= image_tag('garlic_butter_steak_and_potatoes.png', :alt => 'Garlic Butter Steak and Potatoes Skillet') %>
+          <h2>Garlic Butter Steak and Potatoes Skillet</h2>
+          <p>
+            You can never go wrong with a steak unless you go well done...
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_parmesan_and_garlic_crusted_potato_wedges_path do %>
+        <div class="nonFilterDiv potato_dishes misc">
+          <%= image_tag('parmesan_and_garlic_crusted_potato_wedges.png', :alt => 'Parmesan and Garlic Crusted Potato Wedges') %>
+          <h2>Parmesan and Garlic Crusted Potato Wedges</h2>
+          <p>
+            Potato wedges are good, these are better
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_potato_gnocchi_with_mushroom_ragu_path do %>
+        <div class="nonFilterDiv potato_dishes healthy">
+          <%= image_tag('potato_gnocchi_with_mushroom_ragu.png', :alt => 'Potato Gnocchi with Mushroom Ragù') %>
+          <h2>Potato Gnocchi with Mushroom Ragù</h2>
+          <p>
+            Gnocchi and mushrooms what could go wrong
+          </p>
+        </div>
+      <% end %>
+      <%= link_to their_recipes_potato_wedges_path do %>
+        <div class="nonFilterDiv potato_dishes vegie">
+          <%= image_tag('potato_wedges.png', :alt => 'Potato Wedges') %>
+          <h2>Potato Wedges</h2>
+          <p>
+            These chunky, peppery golden potato wedges are always a winner
+            at parties and barbecues
+          </p>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>

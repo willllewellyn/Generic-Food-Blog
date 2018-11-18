@@ -1,0 +1,26 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+    <div class='preamble'>
+      <h1>Drinks</h1>
+      <p>
+        Whooooo! Cocktails and smoothies all round
+      </p>
+    </div>
+
+    <div class="clearfix">
+      <%= link_to their_recipes_samoa_cookie_inspired_iced_coffee_path do %>
+        <div class="nonFilterDiv drinks">
+          <%= image_tag('samoa_cookie_inspired_iced_coffee.png', :alt => 'Samoa Cookie-inspired Iced Coffee') %>
+          <h2>Samoa Cookie-inspired Iced Coffee</h2>
+          <p>
+            A cold brew for a warm day
+          </p>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>
