@@ -5,42 +5,48 @@
 
     <div class="slideshow_container">
       <div class="mySlides fade">
-        <img src="<%= asset_path('blueberry_vanilla_cake-wide.png') %>">
-        <div class="text">
-          <h2>
-            Blueberries! Blueberries! Blueberries!
-          </h2>
-          <p>
-            How does a no-bake (perfect for when you does't have an oven!)
-            blueberry vanillia cake topped with blueberrys sound?
-          </p>
-        </div>
+        <%= link_to their_recipes_blueberry_vanilla_cake_path do %>
+          <img src="<%= asset_path('blueberry_vanilla_cake-wide.png') %>">
+          <div class="text">
+            <h2>
+              Blueberries! Blueberries! Blueberries!
+            </h2>
+            <p>
+              How does a no-bake (perfect for when you does't have an oven!)
+              blueberry vanillia cake topped with blueberrys sound?
+            </p>
+          </div>
+        <% end %>
       </div>
 
       <div class="mySlides fade">
-        <img src="<%= asset_path('asparagus_avocado_sushi-wide.png') %>">
-        <div class="text">
-          <h2>
-            Asparagus and Avocado Sushi
-          </h2>
-          <p>
-            A delicious dish for vegan sushi lovers, mixing Japanese
-            cooking with your favourite veg and fruit
-          </p>
-        </div>
+        <%= link_to their_recipes_asparagus_avocado_sushi_path do %>
+          <img src="<%= asset_path('asparagus_avocado_sushi-wide.png') %>">
+          <div class="text">
+            <h2>
+              Asparagus and Avocado Sushi
+            </h2>
+            <p>
+              A delicious dish for vegan sushi lovers, mixing Japanese
+              cooking with your favourite veg and fruit
+            </p>
+          </div>
+        <% end %>
       </div>
 
       <div class="mySlides fade">
-        <img src="<%= asset_path('lembas_bread_wide.png') %>">
-        <div class="text">
-          <h2>
-            Lembas Bread
-          </h2>
-          <p>
-            "is enough to fill the stomach of a grown man" - Legolas Greenleaf
-            Try elven lembas bread! Elven made, hobbit tested
-          </p>
-        </div>
+        <%= link_to their_recipes_lembas_bread_path do %>
+          <img src="<%= asset_path('lembas_bread_wide.png') %>">
+          <div class="text">
+            <h2>
+              Lembas Bread
+            </h2>
+            <p>
+              "is enough to fill the stomach of a grown man" - Legolas Greenleaf
+              Try elven lembas bread! Elven made, hobbit tested
+            </p>
+          </div>
+        <% end %>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
