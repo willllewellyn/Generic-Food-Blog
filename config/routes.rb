@@ -93,5 +93,7 @@ Rails.application.routes.draw do
 
   resources :about
 
+  resources :blog_views
+
   root 'homepage#index'
 end

@@ -117,10 +117,10 @@ GEM
     duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
@@ -336,7 +336,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   duktape
-  factory_girl_rails
+  factory_bot_rails
   jbuilder (~> 2.5)
   loofah (>= 2.2.3)
   nokogiri
@@ -362,4 +362,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   1.17.1
+   1.17.2

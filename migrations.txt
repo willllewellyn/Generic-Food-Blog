@@ -1,0 +1,43 @@
+rails generate model PageCount PageName:string Views:integer
+rails generate model PageView PageName:string StartTime:timestamp EndTime:timestamp ViewLength:integer
+rails generate model LinkCount Url:string Clicks:integer
+
+rails generate model TheirRecipesView UserId:integer PageId:string Count:integer
+rails generate model BlogView UserId:integer PageId:string Count:integer
+
+rails generate model blogView user_id:string page_id:integer
+
+rails generate scaffold TheirRecipesView UserId:integer PageId:string
+rails generate scaffold BlogView UserId:string PageId:integers
+
+rails generate scaffold Blog title:string author:string text:text
+
+t.string :title
+t.string :author
+t.text :text
+
+
+id         | bigint                      |           | not null | nextval('blog_views_id_seq'::regclass)
+user_id    | character varying           |           |          |
+page_id    | integer                     |           |          |
+created_at | timestamp without time zone |           | not null |
+updated_at | timestamp without time zone |           | not null |
+
+
+INSERT INTO blog_views VALUES(1, 'abc123', 1, '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125');
+
+
+def change
+  add_column :page_views, :count, :integer, default: 0
+end
+
+# app/controllers/pages_controller.rb
+def increment
+  @pageview = PageView.where(user_id: current_user, page_id: params[:id]).first_or_create
+  @pageview.increment!(:count)
+end
+
+# routes.rb
+resources :pages do
+  post :increment
+end

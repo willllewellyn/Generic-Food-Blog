@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class BlogsController < ApplicationController
-  http_basic_authenticate_with name: 'dhh', password: 'secret', except: %i[index show]
 
   def index
     @blogs = Blog.all
@@ -9,6 +8,10 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
+    sessionId = session.id
+    pageId = params[:id]
+    p = BlogView.new user_id: sessionId, page_id: pageId
+    p.save
   end
 
   def new

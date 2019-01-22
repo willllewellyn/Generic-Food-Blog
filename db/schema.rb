@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_08_115026) do
+ActiveRecord::Schema.define(version: 2019_01_22_122723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_115026) do
   create_table "article_comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.integer "article_id"
+    t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_article_comments_on_article_id"
@@ -34,10 +34,17 @@ ActiveRecord::Schema.define(version: 2018_11_08_115026) do
   create_table "blog_comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.integer "blog_id"
+    t.bigint "blog_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["blog_id"], name: "index_blog_comments_on_blog_id"
+  end
+
+  create_table "blog_views", force: :cascade do |t|
+    t.string "user_id"
+    t.integer "page_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "blogs", force: :cascade do |t|
@@ -51,7 +58,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_115026) do
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.integer "article_id"
+    t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_comments_on_article_id"
@@ -60,7 +67,7 @@ ActiveRecord::Schema.define(version: 2018_11_08_115026) do
   create_table "recipe_comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
-    t.integer "recipe_id"
+    t.bigint "recipe_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["recipe_id"], name: "index_recipe_comments_on_recipe_id"
@@ -75,4 +82,8 @@ ActiveRecord::Schema.define(version: 2018_11_08_115026) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "article_comments", "articles"
+  add_foreign_key "blog_comments", "blogs"
+  add_foreign_key "comments", "articles"
+  add_foreign_key "recipe_comments", "recipes"
 end
