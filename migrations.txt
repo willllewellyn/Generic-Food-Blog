@@ -6,6 +6,7 @@ rails generate model TheirRecipesView UserId:integer PageId:string Count:integer
 rails generate model BlogView UserId:integer PageId:string Count:integer
 
 rails generate model blogView user_id:string page_id:integer
+rails generate model articleView user_id:string page_id:integer
 
 rails generate scaffold TheirRecipesView UserId:integer PageId:string
 rails generate scaffold BlogView UserId:string PageId:integers

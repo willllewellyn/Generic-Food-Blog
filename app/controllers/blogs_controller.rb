@@ -8,10 +8,7 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
-    sessionId = session.id
-    pageId = params[:id]
-    p = BlogView.new user_id: sessionId, page_id: pageId
-    p.save
+    record_views
   end
 
   def new
@@ -47,6 +44,13 @@ class BlogsController < ApplicationController
     @blog.destroy
 
     redirect_to blogs_path
+  end
+
+  def record_views
+    sessionId = session.id
+    pageId = params[:id]
+    av = BlogView.new user_id: sessionId, page_id: pageId
+    av.save
   end
 
   private
