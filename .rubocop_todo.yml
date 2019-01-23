@@ -26,6 +26,8 @@ Layout/EndOfLine:
 # ExcludedMethods: refine
 Metrics/BlockLength:
   Max: 38
+  Exclude:
+    - 'config/routes.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -50,3 +52,7 @@ Style/MixinUsage:
 # URISchemes: http, https
 Metrics/LineLength:
   Max: 112
+
+Metrics/ClassLength:
+  Exclude:
+    - 'app/controllers/their_recipes_controller.rb'
