@@ -48,7 +48,8 @@ class ArticlesController < ApplicationController
   def record_views
     session_id = session.id
     page_id = params[:id]
-    av = ArticleView.new user_id: session_id, page_id: page_id
+    page_name = @article.title
+    av = ArticleView.new user_id: session_id, page_id: page_id, page_name: page_name
     av.save
   end
 
