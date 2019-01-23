@@ -7,7 +7,10 @@ rails generate model BlogView UserId:integer PageId:string Count:integer
 
 rails generate model blogView user_id:string page_id:integer
 rails generate model articleView user_id:string page_id:integer
-rails generate model theirRecipesView user_id:string page_id:integer
+rails generate model theirRecipesView user_id:string page_id:integer page_name:string
+
+rails generate migration add_page_name_to_articleView page_name:string
+rails generate migration add_page_name_to_blogView page_name:string
 
 rails generate scaffold TheirRecipesView UserId:integer PageId:string
 rails generate scaffold BlogView UserId:string PageId:integers

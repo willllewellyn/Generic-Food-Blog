@@ -48,7 +48,8 @@ class BlogsController < ApplicationController
   def record_views
     session_id = session.id
     page_id = params[:id]
-    av = BlogView.new user_id: session_id, page_id: page_id
+    page_name = @blog.title
+    av = BlogView.new user_id: session_id, page_id: page_id, page_name: page_name
     av.save
   end
 
