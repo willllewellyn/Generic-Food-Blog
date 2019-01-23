@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-
   def index
     @articles = Article.all
   end
@@ -47,9 +46,9 @@ class ArticlesController < ApplicationController
   end
 
   def record_views
-    sessionId = session.id
-    pageId = params[:id]
-    av = ArticleView.new user_id: sessionId, page_id: pageId
+    session_id = session.id
+    page_id = params[:id]
+    av = ArticleView.new user_id: session_id, page_id: page_id
     av.save
   end
 
