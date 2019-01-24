@@ -1,0 +1,36 @@
+<%= render 'shared/header' %>
+<div class='container'>
+  <div class='content'>
+    <%= render 'shared/sidebar' %>
+
+    <h1>Analytics</h1>
+
+    <div class='dbTable'>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Title...">
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Blog ID</th>
+            <th>Blog Name</th>
+            <th>Session ID</th>
+            <th>Created At</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <% @blog_view.each do |blog_view| %>
+          <tr>
+            <td><%= blog_view.page_id %></td>
+            <td><%= blog_view.page_name %></td>
+            <td><%= blog_view.user_id %></td>
+            <td><%= blog_view.created_at %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <%= render 'shared/footer' %>
+</div>
