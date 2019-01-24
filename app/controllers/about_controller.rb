@@ -5,7 +5,9 @@ class AboutController < ApplicationController
 
   def contacts; end
 
-  def other_contacts; end
+  def analytics;
+    @blog_view = BlogView.all
+  end
 
   def health_and_safety; end
 end
