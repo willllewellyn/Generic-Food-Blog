@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BlogsService
   class << self
     def record_views(session_id, page_id, page_name)
