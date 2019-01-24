@@ -9,6 +9,10 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    session_id = session.id
+    page_id = params[:id]
+    page_name = @recipe.title
+    RecipesService.record_views(session_id, page_id, page_name)
   end
 
   def new

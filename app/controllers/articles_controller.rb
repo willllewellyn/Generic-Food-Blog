@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     session_id = session.id
     page_id = params[:id]
-    page_name = @blog.title
+    page_name = @article.title
     ArticlesService.record_views(session_id, page_id, page_name)
   end
 
