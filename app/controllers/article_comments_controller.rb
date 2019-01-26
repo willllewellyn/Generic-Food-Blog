@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ArticleCommentsController < ApplicationController
-
   def create
     @article = Article.find(params[:article_id])
     @article_comment = @article.article_comments.create(comment_params)

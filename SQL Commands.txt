@@ -1,0 +1,10 @@
+Order.select("date(created_at) as ordered_date, sum(price) as total_price").group("date(created_at)")
+
+
+BlogView.all(:group => "id", :order => "id"
+SELECT * FROM orders GROUP BY date(created_at)
+
+Order.group(:status).count
+SELECT * FROM Blog_views;
+DELETE FROM Blog_views
+WHERE page_name IS NULL;
