@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class RecipeCommentsController < ApplicationController
-
   def create
     @recipe = Recipe.find(params[:recipe_id])
     @recipe_comment = @recipe.recipe_comments.create(comment_params)

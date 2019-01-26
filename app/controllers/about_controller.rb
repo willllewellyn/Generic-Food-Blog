@@ -5,8 +5,10 @@ class AboutController < ApplicationController
 
   def contacts; end
 
-  def analytics;
-    @blog_view = BlogView.all
+  def analytics
+    # @blog_view = BlogView.all
+    # @blog_view = BlogView.group([:id, :page_id])
+    @blog_view = BlogView.group(:page_name).count
   end
 
   def health_and_safety; end
