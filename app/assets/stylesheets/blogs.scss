@@ -6,36 +6,37 @@
   margin-bottom: 12px;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+.blogsTable {
+  table {
+    border-collapse: collapse;
+    width: 100%;
 
-  thead, th, td  {
-    border-bottom: 1px solid #dddddd;
-  }
+    thead, th, td  {
+      border-bottom: 1px solid #dddddd;
+    }
 
-  th {
-    background-color: #ffffff;
-    color: #76d7c4;
-  }
+    th {
+      background-color: #ffffff;
+      color: #76d7c4;
+    }
 
-  th, td {
-      text-align: left;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 40px;
-  }
+    th, td {
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+    }
 
-  td {
-    max-width: 40px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+    td {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-  tr:hover {
-    transition-duration: 0.2s;
-    background-color: #dddddd;
+    tr:hover {
+      transition-duration: 0.2s;
+      background-color: #dddddd;
+    }
   }
 }
 
@@ -82,40 +83,50 @@ table {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .blogsTable {
+    table td {
+        max-width: 40px;
+    }
+  }
+}
+
 @media only screen and (max-width: 760px),
 (min-width: 768px) and (max-width: 1024px)  {
-  table { width: 100%; }
+  .blogsTable {
+    table { width: 100%; }
 
-	table, thead, tbody, th, td, tr {
-		display: block;
-	}
+  	table, thead, tbody, th, td, tr {
+  		display: block;
+  	}
 
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
+  	thead tr {
+  		position: absolute;
+  		top: -9999px;
+  		left: -9999px;
+  	}
 
-	tr { border: 1px solid #cccccc; }
+  	tr { border: 1px solid #cccccc; }
 
-	td {
-		border: none;
-		border-bottom: 1px solid #eeeeee;
-		position: relative;
-		padding-left: 45% !important;
-	}
+  	td {
+  		border: none;
+  		border-bottom: 1px solid #eeeeee;
+  		position: relative;
+  		padding-left: 45% !important;
+  	}
 
-	td:before {
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		width: 55%;
-		padding-right: 10px;
-		white-space: nowrap;
-	}
+  	td:before {
+  		position: absolute;
+  		top: 6px;
+  		left: 6px;
+  		width: 55%;
+  		padding-right: 10px;
+  		white-space: nowrap;
+  	}
 
-	td:nth-of-type(1):before { content: "Title"; }
-	td:nth-of-type(2):before { content: "Text"; }
+  	td:nth-of-type(1):before { content: "Title"; }
+  	td:nth-of-type(2):before { content: "Text"; }
+  }
 }
 
 @media only screen and (max-width: 768px) {

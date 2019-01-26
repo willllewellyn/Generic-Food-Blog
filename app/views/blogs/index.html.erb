@@ -9,28 +9,29 @@
       </p>
     </div>
 
+    <div class='blogsTable'>
+      <div class='dbTable'>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Title...">
+        <table class="myTable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Text</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
 
-    <div class='dbTable'>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Title...">
-      <table id="myTable">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Text</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-        <% @blogs.each do |blog| %>
-          <tr>
-            <td><%= blog.title %></td>
-            <td><%= blog.text %></td>
-            <td><%= link_to 'View', blog_path(blog) %></td>
-          </tr>
-        <% end %>
-        </tbody>
-      </table>
+          <tbody>
+          <% @blogs.each do |blog| %>
+            <tr>
+              <td><%= blog.title %></td>
+              <td><%= blog.text %></td>
+              <td><%= link_to 'View', blog_path(blog) %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <%= form_with scope: :blog, url: blogs_path, local: true do |form| %>
