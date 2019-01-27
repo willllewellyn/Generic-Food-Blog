@@ -16,7 +16,7 @@ h2 {
   letter-spacing: -1px;
   margin-bottom: 30px;
   font-weight: normal;
-  color: #777;
+  color: #777777;
 }
 
 p {
@@ -171,6 +171,74 @@ a {
   margin-right: 0px;
   overflow: hidden;
 }
+
+.pagination {
+  background: white;
+  cursor: default;
+}
+
+.pagination a, .pagination span, .pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+
+.pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+.pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #9fe3d5;
+  color: white;
+  border: 1px solid #9fe3d5;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #777777;
+  border: 1px solid #d1f2eb;
+}
+
+  .pagination a:hover, .pagination a:focus {
+    color: #76d7c4;
+    border-color: #76d7c4;
+    transition-duration: 0.2s;
+  }
+
+.pagination .page_info {
+  background: #76d7c4;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+  .pagination .page_info b {
+    color: #000033;
+    background: #d1f2eb;
+    padding: 0.1em 0.25em;
+  }
+
+.pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .pagination {
+  height: 1%;
+}
+
+*:first-child + html .analyticsViewTable {
+  overflow: hidden;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .content {

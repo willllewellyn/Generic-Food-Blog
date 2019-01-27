@@ -5,28 +5,91 @@
 
     <h1>Analytics</h1>
 
-    <div class='blogsViewTable'>
-      <div class='dbTable'>
-        <table id="myTable">
-          <thead>
-            <tr>
-              <th>Blog ID</th>
-              <th>Blog Name</th>
-              <th>Session ID</th>
-              <th>Created At</th>
-              <th colspan="3"></th>
-            </tr>
-          </thead>
+    <div class='analyticsViewTable'>
+      <div class='dbTable1'>
+        <div class='analyticsBox'>
+          <span>Blogs Top 10</span>
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Page Name</th>
+                <th>Count</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @blog_view.each do |page_name,count| %>
+              <tr>
+                <td><%= page_name %></td>
+                <td><%= count %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
 
-          <tbody>
-          <% @blog_view.each do |page_name,count| %>
-            <tr>
-              <td><%= page_name %></td>
-              <td><%= count %></td>
-            </tr>
-          <% end %>
-          </tbody>
-        </table>
+        <div class='analyticsBox'>
+          <span>Recipes Top 10</span>
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Page Name</th>
+                <th>Count</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @recipes_view.each do |page_name,count| %>
+              <tr>
+                <td><%= page_name %></td>
+                <td><%= count %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+
+        <div class='analyticsBox'>
+          <span>Articles Top 10</span>
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Page Name</th>
+                <th>Count</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @articles_view.each do |page_name,count| %>
+              <tr>
+                <td><%= page_name %></td>
+                <td><%= count %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+
+        <div class='analyticsBox'>
+          <span>Their Recipes Top 10</span>
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Page Name</th>
+                <th>Count</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @their_recipe_view.first(10).each do |page_name,count| %>
+              <tr>
+                <td><%= page_name %></td>
+                <td><%= count %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 

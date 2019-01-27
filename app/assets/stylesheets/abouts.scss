@@ -1,48 +1,113 @@
-.blogsViewTable {
-  table {
-    border-collapse: collapse;
+.analyticsViewTable {
+  width: 70%;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+
+  .dbTable1 {
     width: 100%;
+    border-top: 2px solid #bbbbbb;
+    padding-top: 20px;
+  }
 
-    thead, th, td  {
-      border-bottom: 1px solid #dddddd;
-    }
+  .analyticsBox {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f8f8f8;
 
-    th {
-      background-color: #ffffff;
-      color: #76d7c4;
-    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
 
-    th, td {
-      text-align: left;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 40px;
-    }
+      thead, th, td  {
+        border-bottom: 1px solid #dddddd;
+      }
 
-    td {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-    }
+      th {
+        background-color: #ffffff;
+        color: #76d7c4;
+      }
 
-    tr:hover {
-      transition-duration: 0.2s;
-      background-color: #dddddd;
+      th, td {
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+      }
+
+      tr {
+        width: 100%;
+      }
+
+      td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        // width: 50%;
+      }
+
+      tr:hover {
+        transition-duration: 0.2s;
+        background-color: #dddddd;
+      }
     }
   }
 }
 
+.analyticsViewTable::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.healthAndSafetyContent {
+  width: 70%;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+
+  .healthAndSafetyBox {
+    width: 40%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f8f8f8;
+  }
+}
+
+.healthAndSafetyContent::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 @media only screen and (min-width: 1024px) {
-  .blogsViewTable {
+  .analyticsViewTable {
     table td {
         max-width: 40px;
     }
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .analyticsViewTable {
+    .analyticsBox {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .analyticsViewTable {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 760px),
 (min-width: 768px) and (max-width: 1024px)  {
-  .blogsViewTable {
+  .analyticsViewTable {
     table { width: 100%; }
 
   	table, thead, tbody, th, td, tr {
@@ -63,11 +128,6 @@
   		position: relative;
   		padding-left: 45% !important;
   	}
-
-    //
-    // table td {
-    //   max-width: 0px !important;
-    // }
 
   	td:before {
   		position: absolute;

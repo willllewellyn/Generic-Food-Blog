@@ -33,7 +33,7 @@
           <% end %>
           </tbody>
         </table>
-
+        <%= will_paginate @recipes %>
         <%= form_with scope: :recipe, url: recipes_path, local: true do |form| %>
           ...
         <% end %>
