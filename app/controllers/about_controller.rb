@@ -7,8 +7,17 @@ class AboutController < ApplicationController
 
   def analytics
     # @blog_view = BlogView.all
-    # @blog_view = BlogView.group([:id, :page_id])
+    @articles_view = ArticleView.group(:page_name).count
+    @articles_view = @articles_view.sort_by(&:last).reverse!
+
     @blog_view = BlogView.group(:page_name).count
+    @blog_view = @blog_view.sort_by(&:last).reverse!
+
+    @recipes_view = RecipesView.group(:page_name).count
+    @recipes_view = @recipes_view.sort_by(&:last).reverse!
+
+    @their_recipe_view = TheirRecipesView.group(:page_name).count
+    @their_recipe_view = @their_recipe_view.sort_by(&:last).reverse!
   end
 
   def health_and_safety; end

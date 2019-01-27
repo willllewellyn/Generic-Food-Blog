@@ -31,7 +31,8 @@
           <% end %>
           </tbody>
         </table>
-    </div>
+        <%= will_paginate @articles %>
+      </div>
     </div>
 
     <%= form_with scope: :article, url: articles_path, local: true do |form| %>

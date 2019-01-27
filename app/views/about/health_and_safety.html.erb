@@ -4,6 +4,113 @@
     <%= render 'shared/sidebar' %>
 
     <h1>Health & Safety</h1>
+
+    <div class='healthAndSafetyContent'>
+      <div class='healthAndSafetyBox'>
+        <span>Washing hands</span>
+        <p>
+          Our hands are one of the main ways that germs are spread. Harmful bacteria
+          can be spread very easily from people's hands to food, work surfaces and
+          equipment.
+        </p>
+        <p>
+          It's always important to wash them thoroughly with soap and warm water
+          before handling food, and especially after touching raw food, the bin,
+          pets, and going to the toilet.
+        </p>
+        <p>
+          <%= link_to "NHS",
+          "https://www.nhs.uk/live-well/eat-well/how-to-prepare-and-cook-food-safely/#more-information",
+          :target => "_blank" %>
+        </p>
+      </div>
+
+      <div class='healthAndSafetyBox'>
+        <span>Forklifts</span>
+        <p>
+          Hazard: Approximately 100 employees are fatally injured and approximately
+          95,000 employees are injured every year while operating powered
+          industrial trucks. Forklift turnover accounts for a significant number of
+          these fatalities.
+        </p>
+        <p>
+          Solutions:
+
+          <ul>
+            <li>
+              Train and certify all operators to ensure that they operate forklifts
+              safely.
+            </li>
+            <li>
+              Do not allow any employee under 18 years old to operate a forklift.
+              Properly maintain haulage equipment, including tires.
+            </li>
+            <li>
+              Do not modify or make attachments that affect the capacity and safe
+              operation of the forklift without written approval from the forklift's
+              manufacturer.
+            </li>
+            <li>
+              Examine forklift truck for defects before using.
+            </li>
+            <li>
+              Follow safe operating procedures for picking up, moving, putting down
+              and stacking loads.
+            </li>
+            <li>
+              Drive safely--never exceed 5 mph and slow down in congested or slippery
+              surface areas.
+            </li>
+            <li>
+              Prohibit stunt driving and horseplay.
+            </li>
+            <li>
+              Do not handle loads that are heavier than the capacity of the industrial
+              truck.
+            </li>
+            <li>
+              Remove unsafe or defective forklift trucks from service.
+            </li>
+            <li>
+              Operators shall always wear seatbelts.
+            </li>
+            <li>
+              Avoid traveling with elevated loads.
+            </li>
+            <li>
+              Assure that rollover protective structure is in place.
+            </li>
+            <li>
+              Make certain that the reverse signal alarm is operational and audible
+              above the surrounding noise level.
+            </li>
+          </ul>
+        </p>
+        <p>
+          <%= link_to "OSHA","https://www.osha.gov/Publications/OSHA3252/3252.html",
+          :target => "_blank" %>
+        </p>
+      </div>
+      
+      <div class='healthAndSafetyBox'>
+        <span>Storing and preparing meat</span>
+        <p>
+          Raw meat, including poultry, can contain harmful bacteria that can spread
+          easily to anything it touches, including food, worktops, tables, chopping
+          boards, and knives.
+        </p>
+        <p>
+          Take particular care to keep raw food separate from ready-to-eat foods
+          such as bread, salad and fruit. These foods won't be cooked before you eat
+          them, so any germs that get on to them won't be killed.
+        </p>
+        <p>
+          <%= link_to "NHS",
+          "https://www.nhs.uk/live-well/eat-well/how-to-prepare-and-cook-food-safely/#more-information",
+          :target => "_blank" %>
+        </p>
+      </div>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </div>

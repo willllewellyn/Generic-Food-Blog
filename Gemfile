@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'loofah', '>= 2.2.3'
 
+gem 'will_paginate'
+
 source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.0.6'

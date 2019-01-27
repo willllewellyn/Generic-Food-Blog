@@ -8,3 +8,8 @@ Order.group(:status).count
 SELECT * FROM Blog_views;
 DELETE FROM Blog_views
 WHERE page_name IS NULL;
+
+
+.group(:id)
+.order('COUNT(jobs.id) DESC')
+.limit(10)
