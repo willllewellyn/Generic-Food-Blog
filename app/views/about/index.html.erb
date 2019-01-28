@@ -2,41 +2,85 @@
 <div class='container'>
   <div class='content'>
     <%= render 'shared/sidebar' %>
-
-    <div class='preamble'>
-      <h1>About</h1>
+    <div class='contentText'>
+      <div class='preamble'>
+        <h1>About</h1>
+      </div>
       <p>
+        This website is being used to test a new Ruby gem that collects
+        information about the website. No information is being collected
+        about the visitors (you) so all your personal data and information is
+        where you left it (providing you didn't click on any dodgy links before
+        you got here). So if something doesn't work quite right this why, it is
+        an experimental website being used to test code (don't worry you're
+        safe). If something goes wrong here, all I can say is it's a
+        experimental website and to report a bug, write a
+        <%= link_to 'blog', blogs_path %>
+         with the title "BUG: xxxx xxxx".
+      </p>
+      <p>
+        The information about the website that is being gathered is:
+      </p>
+      <ul>
+        <li> Which pages are being viewed </li>
+        <li> Which links are being clicked </li>
+        <li> How long the pages are being viewed </li>
+        <li> What time the pages/links are visited </li>
+      </ul>
+      <p>
+        Information not being gathered is:
+      </p>
+      <ul>
+        <li> Who you are </li>
+        <li> Your IP addresse </li>
+        <li> Any personal information about you </li>
+        <li> No cookies are used so no personal information about you or your
+          browser is recorded </li>
+      </ul>
 
+      <div class='preamble'>
+        <h1>Special Thanks</h1>
+      </div>
+      <p>
+        I am no chief, so a big hand please to all the other websites that made
+        this possible and in no particular order:
+        <%= link_to "Imgur",
+        "https://imgur.com/",
+        :target => "_blank" %>,
+        <%= link_to "Reddit",
+        "https://www.reddit.com/",
+        :target => "_blank" %>,
+        <%= link_to "BBCGoodFood",
+        "https://www.bbcgoodfood.com/",
+        :target => "_blank" %>
+        and last but not least
+        <%= link_to "Food & Wine",
+        "https://www.foodandwine.com/",
+        :target => "_blank" %>
+      </p>
+
+      <div class='preamble'>
+        <h1>Privacy Policy</h1>
+      </div>
+      <p>
+        To reiterate again, we aren't collecting any data about you (we prefer
+        to leave that to the NSA and GCHQ), only about the website it's self.
+        We have one cookie that we use. It's a default Rails cookie about the
+        session ID which is used so we can see if someone clicked on a
+        seasonal recipe they also clicked on the drinks section. So to try and
+        promote trust and transparency, all of the source code can be found
+        <%= link_to "here",
+        "https://github.com/willllewellyn/Generic-Food-Blog",
+        :target => "_blank" %>
+      </p>
+
+      <div class='preamble'>
+        <h1>Terms Of Use</h1>
+      </div>
+      <p>
+        Please play nice, bit of a circle of trust going on here
       </p>
     </div>
-
-    <p>
-      This website is being used to test a new Ruby gem that collects
-      information about the website. No information is being collected
-      about the visitors (you) so all your personal data and information is
-      where you left it (providing you didn't click on any dodgy links before
-      you got here). So if something doesn't work quite right this why, it is
-      an experimental website being used to test code (don't worry you're safe).
-    </p>
-
-    <p>
-      The information about the website that is being gathered is:
-    </p>
-    <ul>
-      <li> Which pages are being viewed </li>
-      <li> Which links are being clicked </li>
-      <li> How long the pages are being viewed </li>
-      <li> What time the pages/links are visited </li>
-    </ul>
-    <p>
-      Information not being gathered is:
-    </p>
-    <ul>
-      <li> Who you are </li>
-      <li> Your IP addresse </li>
-      <li> Any personal information about you </li>
-      <li> No cookies are used so no personal information about you or your browser is recorded </li>
-    </ul>
   </div>
   <%= render 'shared/footer' %>
 </div>
