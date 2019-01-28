@@ -6,7 +6,6 @@ class AboutController < ApplicationController
   def contacts; end
 
   def analytics
-    # @blog_view = BlogView.all
     @articles_view = ArticleView.group(:page_name).count
     @articles_view = @articles_view.sort_by(&:last).reverse!
 
