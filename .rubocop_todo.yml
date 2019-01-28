@@ -56,3 +56,7 @@ Metrics/LineLength:
 Metrics/ClassLength:
   Exclude:
     - 'app/controllers/their_recipes_controller.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'app/controllers/about_controller.rb'

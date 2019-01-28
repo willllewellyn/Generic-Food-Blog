@@ -153,6 +153,12 @@ body::after {
 
 a {
   transition-duration: 0.2s;
+  color: #76d7c4;
+}
+
+a:hover {
+  transition-duration: 0.2s;
+  color: #777777;
 }
 
 .preamble {

@@ -77,6 +77,10 @@
   }
 }
 
+.contentText {
+  width: 50%;
+}
+
 .healthAndSafetyContent::after {
     content: "";
     clear: both;
@@ -101,6 +105,10 @@
 
 @media only screen and (max-width: 766px) {
   .analyticsViewTable {
+    width: 100%;
+  }
+
+  .contentText {
     width: 100%;
   }
 }
