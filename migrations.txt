@@ -16,6 +16,8 @@ rails generate migration add_page_name_to_blogView page_name:string
 rails generate scaffold TheirRecipesView UserId:integer PageId:string
 rails generate scaffold BlogView UserId:string PageId:integers
 
+rails generate model generalPageView page_name:string count:integer
+
 rails generate scaffold Blog title:string author:string text:text
 
 t.string :title

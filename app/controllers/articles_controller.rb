@@ -3,6 +3,7 @@
 class ArticlesController < ApplicationController
   def index
     @articles = Article.paginate(page: params[:page], per_page: 10).order(:title)
+    GeneralPageService.record_views('Articles')
   end
 
   def show

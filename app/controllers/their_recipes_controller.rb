@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class TheirRecipesController < ApplicationController
-  def index; end
+  def index
+    GeneralPageService.record_views('Their Recipes')
+  end
 
   def acorn_squash_caramelized_onion_goat_cheese_pizza
     TheirRecipesService.record_views(session.id, 1, 'Acorn squash caramelized onion goat cheese pizza')

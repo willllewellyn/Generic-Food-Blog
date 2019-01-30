@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
 class AboutController < ApplicationController
-  def index; end
+  def index
+    GeneralPageService.record_views('About')
+  end
 
-  def contacts; end
+  def contacts
+    GeneralPageService.record_views('Contacts')
+  end
 
   def analytics
     @articles_view = ArticleView.group(:page_name).count
@@ -17,7 +21,11 @@ class AboutController < ApplicationController
 
     @their_recipe_view = TheirRecipesView.group(:page_name).count
     @their_recipe_view = @their_recipe_view.sort_by(&:last).reverse!
+
+    GeneralPageService.record_views('Analytics')
   end
 
-  def health_and_safety; end
+  def health_and_safety
+    GeneralPageService.record_views('Health and Safety')
+  end
 end
