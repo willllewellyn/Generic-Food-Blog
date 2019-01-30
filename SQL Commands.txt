@@ -5,9 +5,10 @@ BlogView.all(:group => "id", :order => "id"
 SELECT * FROM orders GROUP BY date(created_at)
 
 Order.group(:status).count
-SELECT * FROM Blog_views;
-DELETE FROM Blog_views
+SELECT * FROM blog_views;
+DELETE FROM blog_views
 WHERE page_name IS NULL;
+DELETE FROM blog_views;
 
 
 .group(:id)
