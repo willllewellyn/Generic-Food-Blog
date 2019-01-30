@@ -10,17 +10,13 @@ class AboutController < ApplicationController
   end
 
   def analytics
-    @articles_view = ArticleView.group(:page_name).count
-    @articles_view = @articles_view.sort_by(&:last).reverse!
+    @articles_view = AboutService.get_article_views
 
-    @blog_view = BlogView.group(:page_name).count
-    @blog_view = @blog_view.sort_by(&:last).reverse!
+    @blog_view = AboutService.get_blog_views
 
-    @recipes_view = RecipesView.group(:page_name).count
-    @recipes_view = @recipes_view.sort_by(&:last).reverse!
+    @recipes_view = AboutService.get_recipe_views
 
-    @their_recipe_view = TheirRecipesView.group(:page_name).count
-    @their_recipe_view = @their_recipe_view.sort_by(&:last).reverse!
+    @their_recipe_view = AboutService.get_their_recipe_views
 
     GeneralPageService.record_views('Analytics')
   end
