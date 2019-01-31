@@ -2,7 +2,8 @@
 
 class TheirRecipesController < ApplicationController
   def index
-    GeneralPageService.record_views('Their Recipes')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Their Recipes')
   end
 
   def acorn_squash_caramelized_onion_goat_cheese_pizza

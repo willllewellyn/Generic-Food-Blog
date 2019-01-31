@@ -14,3 +14,12 @@ DELETE FROM blog_views;
 .group(:id)
 .order('COUNT(jobs.id) DESC')
 .limit(10)
+
+
+
+INSERT INTO blog_views VALUES(1, 'abc123', 1, '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125');
+INSERT INTO general_page_views VALUES(6, 'Pineapples', '123abc', '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125')
+
+def change
+  add_column :page_views, :count, :integer, default: 0
+end

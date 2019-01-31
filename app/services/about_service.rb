@@ -21,5 +21,9 @@ module AboutService
       @their_recipe_view = TheirRecipesView.group(:page_name).count
       @their_recipe_view = @their_recipe_view.sort_by(&:last).reverse!
     end
+
+    def get_website_views
+      @general_page_views = GeneralPageView.all
+    end
   end
 end

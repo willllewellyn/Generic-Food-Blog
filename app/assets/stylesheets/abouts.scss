@@ -5,9 +5,9 @@
   padding-top: 20px;
 
   .dbTable1 {
-    width: 100%;
     border-top: 2px solid #bbbbbb;
     padding-top: 20px;
+    width: 100%;
   }
 
   .analyticsBox {
@@ -81,6 +81,16 @@
   width: 50%;
 }
 
+.lineChart {
+  width: 70%;
+  border-top: 2px solid #bbbbbb;
+  padding-top: 20px;
+
+  #general_page_views_chart {
+    width: 100%;
+  }
+}
+
 .healthAndSafetyContent::after {
     content: "";
     clear: both;
@@ -104,6 +114,10 @@
 }
 
 @media only screen and (max-width: 766px) {
+  .lineChart {
+    width: 100%;
+  }
+
   .analyticsViewTable {
     width: 100%;
   }

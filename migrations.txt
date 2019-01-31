@@ -17,6 +17,8 @@ rails generate scaffold TheirRecipesView UserId:integer PageId:string
 rails generate scaffold BlogView UserId:string PageId:integers
 
 rails generate model generalPageView page_name:string count:integer
+rails generate model generalPageView page_name:string session_id:string
+
 
 rails generate scaffold Blog title:string author:string text:text
 
@@ -31,13 +33,6 @@ page_id    | integer                     |           |          |
 created_at | timestamp without time zone |           | not null |
 updated_at | timestamp without time zone |           | not null |
 
-
-INSERT INTO blog_views VALUES(1, 'abc123', 1, '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125');
-
-
-def change
-  add_column :page_views, :count, :integer, default: 0
-end
 
 # app/controllers/pages_controller.rb
 def increment
