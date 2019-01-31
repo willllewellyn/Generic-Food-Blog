@@ -2,8 +2,9 @@
 
 module GeneralPageService
   class << self
-    def record_views(page_name)
-      GeneralPageView.find_or_create_by(page_name: page_name).increment!(:count)
+    def record_views(session_id, page_name)
+      temp = GeneralPageView.new session_id: session_id, page_name: page_name
+      temp.save
     end
   end
 end

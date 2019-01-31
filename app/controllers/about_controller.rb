@@ -2,11 +2,13 @@
 
 class AboutController < ApplicationController
   def index
-    GeneralPageService.record_views('About')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'About')
   end
 
   def contacts
-    GeneralPageService.record_views('Contacts')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Contacts')
   end
 
   def analytics
@@ -18,10 +20,14 @@ class AboutController < ApplicationController
 
     @their_recipe_view = AboutService.get_their_recipe_views
 
-    GeneralPageService.record_views('Analytics')
+    @general_page_views = AboutService.get_website_views
+
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Analytics')
   end
 
   def health_and_safety
-    GeneralPageService.record_views('Health and Safety')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Health and Safety')
   end
 end

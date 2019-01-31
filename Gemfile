@@ -36,6 +36,16 @@ gem 'loofah', '>= 2.2.3'
 
 gem 'will_paginate'
 
+gem 'chartkick'
+
+gem 'groupdate'
+
+gem 'highcharts-rails'
+
+gem 'highcharts'
+
+gem 'active_median'
+
 source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.0.6'

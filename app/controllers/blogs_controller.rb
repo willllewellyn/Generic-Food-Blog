@@ -3,7 +3,8 @@
 class BlogsController < ApplicationController
   def index
     @blogs = Blog.paginate(page: params[:page], per_page: 10).order(:title)
-    GeneralPageService.record_views('Blogs')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Blogs')
   end
 
   def show

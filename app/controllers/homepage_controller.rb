@@ -2,6 +2,7 @@
 
 class HomepageController < ApplicationController
   def index
-    GeneralPageService.record_views('Homepage')
+    session_id = session.id
+    GeneralPageService.record_views(session_id, 'Homepage')
   end
 end

@@ -2,8 +2,8 @@
 
 one:
   page_name: MyString
-  count: 1
+  session_id: MyString
 
 two:
   page_name: MyString
-  count: 1
+  session_id: MyString
