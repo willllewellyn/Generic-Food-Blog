@@ -23,3 +23,20 @@ INSERT INTO general_page_views VALUES(6, 'Pineapples', '123abc', '2019-01-20 16:
 def change
   add_column :page_views, :count, :integer, default: 0
 end
+
+
+
+rake db:seed:dump
+rake db:seed:dump MODELS=their_recipe_view FILE=db/seeds/their_recipes.rb
+
+SeedDump.dump(User, file: 'db/seeds.rb', append: true)
+SeedDump.dump(User, exclude: [:name, :age])
+SeedDump.dump(User.where(state: :active))
+
+SeedDump.dump(TheirRecipesView.where(page_name: :distinct), file: 'db/seeds/their_recipes', append:true, exclude: [:session_id])
+
+
+rake db:seed:dump MODELS=their_recipes_view
+SeedDump.dump(TheirRecipesView.where(page_name: :distinct), file: 'db/seeds/their_recipes_seed.rb', exclude: [:user_id])
+
+SeedDump.dump(TheirRecipesView, file: 'db/seeds/their_recipes_seed.rb', exclude: [:id, :user_id, :created_at, :updated_at])

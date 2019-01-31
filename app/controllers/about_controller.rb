@@ -12,15 +12,15 @@ class AboutController < ApplicationController
   end
 
   def analytics
-    @articles_view = AboutService.get_article_views
+    @articles_view = AboutService.fetch_article_views
 
-    @blog_view = AboutService.get_blog_views
+    @blog_view = AboutService.fetch_blog_views
 
-    @recipes_view = AboutService.get_recipe_views
+    @recipes_view = AboutService.fetch_recipe_views
 
-    @their_recipe_view = AboutService.get_their_recipe_views
+    @their_recipe_view = AboutService.fetch_their_recipe_views
 
-    @general_page_views = AboutService.get_website_views
+    @general_page_views = AboutService.fetch_website_views
 
     session_id = session.id
     GeneralPageService.record_views(session_id, 'Analytics')
