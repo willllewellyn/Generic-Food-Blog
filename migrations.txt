@@ -19,6 +19,8 @@ rails generate scaffold BlogView UserId:string PageId:integers
 rails generate model generalPageView page_name:string count:integer
 rails generate model generalPageView page_name:string session_id:string
 
+rails gnerate model their_recipes page_id:integer page_name:string
+
 
 rails generate scaffold Blog title:string author:string text:text
 

@@ -1,4 +1,4 @@
-TheirRecipesView.create!([
+TheirRecipe.create!([
   {page_id: 1, page_name: "Acorn squash caramelized onion goat cheese pizza"},
   {page_id: 2, page_name: "Asparagus avocado sushi"},
   {page_id: 3, page_name: "Bacon egg and spinach fried rice"},

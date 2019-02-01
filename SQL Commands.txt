@@ -6,9 +6,9 @@ SELECT * FROM orders GROUP BY date(created_at)
 
 Order.group(:status).count
 SELECT * FROM blog_views;
-DELETE FROM blog_views
-WHERE page_name IS NULL;
+DELETE FROM blog_views WHERE page_name IS NULL;
 DELETE FROM blog_views;
+DELETE FROM their_recipes_views WHERE created_at < '2019-02-01';
 
 
 .group(:id)
