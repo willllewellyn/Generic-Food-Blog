@@ -1,6 +1,33 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :about
+  get 'about/contacts'
+  get 'about/analytics'
+  get 'about/health_and_safety'
+
+  get 'homepage/index'
+
+  resources :articles do
+    resources :article_comments
+  end
+
+  resources :blogs do
+    resources :blog_comments
+  end
+
+  resources :blog_views
+
+  resources :recipes do
+    resources :recipe_comments
+  end
+
+  resources :their_recipes
+
+  resources :visitors
+
+  root 'homepage#index'
+
   get 'their_recipes/acorn_squash_caramelized_onion_goat_cheese_pizza'
   get 'their_recipes/asparagus_avocado_sushi'
   get 'their_recipes/bacon_egg_and_spinach_fried_rice'
@@ -70,29 +97,4 @@ Rails.application.routes.draw do
   get 'their_recipes/healthy'
   get 'their_recipes/easy'
   get 'their_recipes/asian'
-
-  get 'about/contacts'
-  get 'about/analytics'
-  get 'about/health_and_safety'
-  get 'homepage/index'
-
-  resources :articles do
-    resources :article_comments
-  end
-
-  resources :recipes do
-    resources :recipe_comments
-  end
-
-  resources :their_recipes
-
-  resources :blogs do
-    resources :blog_comments
-  end
-
-  resources :about
-
-  resources :blog_views
-
-  root 'homepage#index'
 end

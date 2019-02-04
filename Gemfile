@@ -48,6 +48,8 @@ gem 'active_median'
 
 gem 'seed_dump'
 
+gem 'faker'
+
 source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.0.6'
