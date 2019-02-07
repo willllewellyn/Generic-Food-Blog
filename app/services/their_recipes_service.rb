@@ -8,8 +8,6 @@ module TheirRecipesService
 
       visitor = Visitor.find_by_name(session_id)
       theirrecipe = Theirrecipe.find_by_name(page_name)
-      # ltr = LikedTheirrecipe.new visitor_id: visitor.id, theirrecipe_id: page_id
-      # ltr.save
 
       visitor.theirrecipes << theirrecipe
     end
