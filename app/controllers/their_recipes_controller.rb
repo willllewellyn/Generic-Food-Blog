@@ -6,6 +6,8 @@ class TheirRecipesController < ApplicationController
     GeneralPageService.record_views(session_id, 'Their Recipes')
   end
 
+  def show; end
+
   def acorn_squash_caramelized_onion_goat_cheese_pizza
     TheirRecipesService.record_views(session.id, 1, 'Acorn squash caramelized onion goat cheese pizza')
   end
