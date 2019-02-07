@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 require 'faker'
-Visitor.destroy_all
-Theirrecipe.destroy_all
-# using faker gem to create unique names to create visitors
+# Visitor.destroy_all
+# Theirrecipe.destroy_all
+
 30.times { Visitor.create(name: Faker::Crypto.unique.md5) }
-# 15 recipes
+
 theirrecipes = ['Acorn squash caramelized onion goat cheese pizza',
                 'Asparagus avocado sushi',
                 'Bacon egg and spinach fried rice',
@@ -67,13 +67,12 @@ theirrecipes = ['Acorn squash caramelized onion goat cheese pizza',
                 'Trout with garlic lemon butter herb sauce',
                 'Welsh rarebit']
 
-# create recipes
 i = 0
 15.times do
   Theirrecipe.create(name: theirrecipes[i])
   i += 1
 end
-# randomly associate recipes with visitors, where no visitor has the same recipe more than once
+
 100.times do
   visitor = Visitor.all[rand(0...30)]
   theirrecipe = Theirrecipe.all[rand(0...15)]

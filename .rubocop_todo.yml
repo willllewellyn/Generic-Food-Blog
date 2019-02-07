@@ -62,3 +62,12 @@ Metrics/ClassLength:
 Metrics/AbcSize:
   Exclude:
     - 'app/controllers/about_controller.rb'
+    - 'lib/recommendation.rb'
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'lib/recommendation.rb'
+
+Style/GuardClause:
+  Exclude:
+    - 'db/seeds.rb'
