@@ -19,6 +19,8 @@ DELETE FROM their_recipes_views WHERE created_at < '2019-02-01';
 
 INSERT INTO blog_views VALUES(1, 'abc123', 1, '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125');
 INSERT INTO general_page_views VALUES(6, 'Pineapples', '123abc', '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125')
+INSERT INTO liked_theirrecipes VALUES(1, 'abc123', 1, '2019-01-20 16:25:27.088125', '2019-01-20 16:25:27.088125');
+
 
 def change
   add_column :page_views, :count, :integer, default: 0
@@ -40,3 +42,6 @@ rake db:seed:dump MODELS=their_recipes_view
 SeedDump.dump(TheirRecipesView.where(page_name: :distinct), file: 'db/seeds/their_recipes_seed.rb', exclude: [:user_id])
 
 SeedDump.dump(TheirRecipesView, file: 'db/seeds/their_recipes_seed.rb', exclude: [:id, :user_id, :created_at, :updated_at])
+
+
+SELECT * FROM liked_theirrecipes WHERE VISITOR_ID = '521';

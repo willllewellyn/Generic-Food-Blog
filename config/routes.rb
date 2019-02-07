@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :about
   get 'about/contacts'
   get 'about/analytics'
   get 'about/health_and_safety'
+  resources :about
 
   get 'homepage/index'
 
@@ -21,8 +21,6 @@ Rails.application.routes.draw do
   resources :recipes do
     resources :recipe_comments
   end
-
-  resources :their_recipes
 
   resources :visitors
 
@@ -97,4 +95,5 @@ Rails.application.routes.draw do
   get 'their_recipes/healthy'
   get 'their_recipes/easy'
   get 'their_recipes/asian'
+  resources :their_recipes
 end

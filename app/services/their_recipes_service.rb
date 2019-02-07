@@ -3,8 +3,15 @@
 module TheirRecipesService
   class << self
     def record_views(session_id, page_id, page_name)
-      av = TheirRecipesView.new user_id: session_id, page_id: page_id, page_name: page_name
-      av.save
+      trv = TheirRecipesView.new user_id: session_id, page_id: page_id, page_name: page_name
+      trv.save
+
+      visitor = Visitor.find_by_name(session_id)
+      theirrecipe = Theirrecipe.find_by_name(page_name)
+      # ltr = LikedTheirrecipe.new visitor_id: visitor.id, theirrecipe_id: page_id
+      # ltr.save
+
+      visitor.theirrecipes << theirrecipe
     end
   end
 end
