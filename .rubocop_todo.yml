@@ -53,7 +53,11 @@ Style/MixinUsage:
 Metrics/LineLength:
   Max: 112
   Exclude:
-    - 'db/seeds.rb'
+    - 'db/seeds/base_seed.rb'
+    - 'db/seeds/meat_seed.rb'
+    - 'db/seeds/mix_seed1.rb'
+    - 'db/seeds/mix_seed2.rb'
+    - 'db/seeds/recommendations_seed.rb'
 
 Metrics/ClassLength:
   Exclude:
@@ -70,4 +74,12 @@ Lint/UselessAssignment:
 
 Style/GuardClause:
   Exclude:
-    - 'db/seeds.rb'
+    - 'db/seeds/base_seed.rb'
+    - 'db/seeds/meat_seed.rb'
+    - 'db/seeds/mix_seed1.rb'
+    - 'db/seeds/mix_seed2.rb'
+    - 'db/seeds/recommendations_seed.rb'
+
+Lint/SafeNavigationChain:
+  Exclude:
+    - 'app/services/their_recipes_service.rb'

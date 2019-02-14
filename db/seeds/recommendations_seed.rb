@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'faker'
-# Visitor.destroy_all
+Visitor.destroy_all
 # Theirrecipe.destroy_all
 
 30.times { Visitor.create(name: Faker::Crypto.unique.md5) }
