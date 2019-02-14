@@ -9,7 +9,7 @@ module TheirRecipesService
       visitor = Visitor.find_by_name(session_id)
       theirrecipe = Theirrecipe.find_by_name(page_name)
 
-      visitor.theirrecipes << theirrecipe
+      visitor&.theirrecipes << theirrecipe
     end
   end
 end

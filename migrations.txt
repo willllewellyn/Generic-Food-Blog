@@ -19,30 +19,7 @@ rails generate scaffold BlogView UserId:string PageId:integers
 rails generate model generalPageView page_name:string count:integer
 rails generate model generalPageView page_name:string session_id:string
 
-rails gnerate model their_recipes page_id:integer page_name:string
+rails generate model their_recipes page_id:integer page_name:string
 
 
 rails generate scaffold Blog title:string author:string text:text
-
-t.string :title
-t.string :author
-t.text :text
-
-
-id         | bigint                      |           | not null | nextval('blog_views_id_seq'::regclass)
-user_id    | character varying           |           |          |
-page_id    | integer                     |           |          |
-created_at | timestamp without time zone |           | not null |
-updated_at | timestamp without time zone |           | not null |
-
-
-# app/controllers/pages_controller.rb
-def increment
-  @pageview = PageView.where(user_id: current_user, page_id: params[:id]).first_or_create
-  @pageview.increment!(:count)
-end
-
-# routes.rb
-resources :pages do
-  post :increment
-end
