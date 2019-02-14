@@ -12,10 +12,10 @@
         <th>Rating</th>
       </tr>
       <% @visitor.recommend_recipes.each do |key, value| %>
-      <tr>
-        <td><%= key.name %></td>
-        <td><%= value.round(2) %></td>
-      </tr>
+        <tr>
+          <td><%= key.name %></td>
+          <td><%= value.round(2) %></td>
+        </tr>
       <% end %>
     </table>
 
