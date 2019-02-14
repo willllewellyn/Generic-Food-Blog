@@ -11,5 +11,9 @@ module GeneralPageService
       gpv = Visitor.new name: session_id
       gpv.save
     end
+
+    def recommendation(session_id)
+      Visitor.find_by_name(session_id)
+    end
   end
 end

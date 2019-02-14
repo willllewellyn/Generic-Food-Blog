@@ -15,6 +15,19 @@
     </div>
     <div class='center'>
       <div class="img-container">
+        <% visitor = GeneralPageService.recommendation(session.id) %>
+        <% if visitor != nil %>
+          <h2>You Might Like <%= visitor.name %>:</h2>
+          <% temp = visitor.recommend_recipes %>
+          <% key, value = temp.first %>
+          <p> <%= key.name %> </p>
+        <% else %>
+          <h2>Error: No Visitor ID, go to the homepage</h2>
+        <% end %>
+      </div>
+    </div>
+    <div class='center'>
+      <div class="img-container">
         <%= link_to their_recipes_path do %>
           <%= image_tag('pasta_dishes.png', :alt => 'Their Recipes') %>
           <h2>Their Recipes</h2>
