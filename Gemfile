@@ -50,6 +50,13 @@ gem 'seed_dump'
 
 gem 'faker'
 
+gem "actionview", ">= 5.2.2.1"
+
+gem "railties", ">= 5.2.2.1"
+
+
+
+
 source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.0.6'
@@ -57,7 +64,7 @@ gem 'rspec'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'bootstrap-sass'
+gem "bootstrap-sass", ">= 3.4.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
