@@ -16,14 +16,10 @@
     <div class='center'>
       <div class="img-container">
         <% visitor = GeneralPageService.recommendation(session.id) %>
-        <% if visitor != nil %>
-          <h2>You Might Like <%= visitor.name %>:</h2>
-          <% temp = visitor.recommend_recipes %>
-          <% key, value = temp.first %>
-          <p> <%= key.name %> </p>
-        <% else %>
-          <h2>Error: No Visitor ID, go to the homepage</h2>
-        <% end %>
+        <h2>You Might Like <%= visitor.name %>:</h2>
+        <% temp = visitor.recommend_recipes %>
+        <% key, value = temp.first %>
+        <p> <%= key.name %> </p>
       </div>
     </div>
     <div class='center'>
