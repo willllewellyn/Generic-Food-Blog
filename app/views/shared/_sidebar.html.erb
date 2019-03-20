@@ -16,7 +16,7 @@
     <div class='center'>
       <div class="img-container">
         <% visitor = GeneralPageService.recommendation(session.id) %>
-        <h2>You Might Like <%= visitor.name %>:</h2>
+        <h2>You Might Like <%= visitor.name if visitor.name %>:</h2>
         <% temp = visitor.recommend_recipes %>
         <% key, value = temp.first %>
         <p> <%= key.name %> </p>
