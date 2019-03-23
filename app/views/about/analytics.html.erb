@@ -8,6 +8,7 @@
       <span>Website Hits</span>
       <%= line_chart @general_page_views.group_by_minute(:created_at).count,
         points: false %>
+      <%= link_to 'CSV', about_index_path(format: 'csv') %>
     </div>
 
     <div class='analyticsViewTable'>
