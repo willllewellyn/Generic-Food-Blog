@@ -2,9 +2,19 @@
 
 class AboutController < ApplicationController
   def index
+    @abouts = AboutService.fetch_website_views
+    @website_hits = AboutService.fetch_website_views
+
+    respond_to do |format|
+      format.html
+      format.csv { send_data @website_hits.to_csv, filename: "WebsiteHits-#{Date.today}.csv" }
+    end
+
     session_id = session.id
     GeneralPageService.record_views(session_id, 'About')
   end
+
+  def show; end
 
   def contacts
     session_id = session.id
