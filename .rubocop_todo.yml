@@ -83,3 +83,7 @@ Style/GuardClause:
 Lint/SafeNavigationChain:
   Exclude:
     - 'app/services/their_recipes_service.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'app/controllers/about_controller.rb'

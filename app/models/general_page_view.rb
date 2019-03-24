@@ -2,7 +2,6 @@
 
 class GeneralPageView < ApplicationRecord
   belongs_to :abouts
-
   attr_accessor :PageName, :SessionId
 
   def self.to_csv
