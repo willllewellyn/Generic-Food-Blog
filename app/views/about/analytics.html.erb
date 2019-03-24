@@ -6,15 +6,20 @@
 
     <div class='lineChart'>
       <span>Website Hits</span>
+      <span class='csv'>
+        <%= link_to 'CSV', about_index_path(format: 'csv', type: 1) %>
+      </span>
       <%= line_chart @general_page_views.group_by_minute(:created_at).count,
         points: false %>
-      <%= link_to 'CSV', about_index_path(format: 'csv') %>
     </div>
 
     <div class='analyticsViewTable'>
       <div class='dbTable1'>
         <div class='analyticsBox'>
           <span>Blogs Top 10</span>
+          <span class='csv'>
+            <%= link_to 'CSV', about_index_path(format: 'csv', type: 2) %>
+          </span>
           <table id="myTable">
             <thead>
               <tr>
@@ -36,6 +41,9 @@
 
         <div class='analyticsBox'>
           <span>Recipes Top 10</span>
+          <span class='csv'>
+            <%= link_to 'CSV', about_index_path(format: 'csv', type: 3) %>
+          </span>
           <table id="myTable">
             <thead>
               <tr>
@@ -57,6 +65,9 @@
 
         <div class='analyticsBox'>
           <span>Articles Top 10</span>
+          <span class='csv'>
+            <%= link_to 'CSV', about_index_path(format: 'csv', type: 4) %>
+          </span>
           <table id="myTable">
             <thead>
               <tr>
@@ -78,6 +89,9 @@
 
         <div class='analyticsBox'>
           <span>Their Recipes Top 10</span>
+          <span class='csv'>
+            <%= link_to 'CSV', about_index_path(format: 'csv', type: 5) %>
+          </span>
           <table id="myTable">
             <thead>
               <tr>
